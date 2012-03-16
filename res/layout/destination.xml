@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
     
+    <TableRow>
     <TextView
         android:id="@+id/title"
         android:layout_width="fill_parent"
@@ -11,28 +12,46 @@
         android:textStyle="bold"
         android:textSize="30dp" 
         android:text="@string/unknown" />
+    </TableRow>
     
+    <TableRow>
     <ImageView
    		android:id="@+id/test_image"
    		android:src="@drawable/icon"
    		android:layout_width="wrap_content"
    		android:layout_height="wrap_content"
    		android:layout_gravity="left" />
-
+    
+    <TableLayout>
+	<TableRow>
     <TextView
         android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:text="@string/unknown" />
-    
+    </TableRow>
+    <TableRow>
     <TextView
         android:id="@+id/number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:text="@string/unknown" />
+    </TableRow>
+    </TableLayout>
+    </TableRow>
     
+	<TableRow >            
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/unknown" />
+	</TableRow>
+    
+
+	<TableRow >
     <Button 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,12 +63,8 @@
         android:layout_height="wrap_content"
         android:text="@string/call_tour"
         android:onClick="callTour" />
-        
-    <TextView
-        android:id="@+id/desc"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/unknown" />
+    </TableRow>
+
     
 
-</LinearLayout>
+</TableLayout>

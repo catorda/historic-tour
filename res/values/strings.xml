@@ -2,4 +2,7 @@
 <resources>
     <string name="hello">Hello World, HistoricTourActivity!</string>
     <string name="app_name">HistoricTour</string>
+    <string name="unknown">Missing Data</string>
+    <string name="call_btn">Call Site</string>
+    <string name="call_tour">Call Tour</string>
 </resources>
