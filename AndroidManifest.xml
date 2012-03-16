@@ -6,7 +6,10 @@
     <uses-sdk android:minSdkVersion="8" />
     <uses-permission android:name="android.permission.INTERNET"/>
     <application android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:name=".HistoricTourActivity"
+        
+        <uses-library android:name="com.google.android.maps" />
+        
+        <activity android:name=".Tabs"
                   android:label="@string/app_name">
                   <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -15,5 +18,12 @@
         </activity>
         <activity android:name=".PostcardActivity" android:label="Postcard">
         </activity>
+        <activity android:name=".HistoricTourActivity"></activity>
+        <activity android:name=".MapsActivity"></activity>
+        <activity android:name=".GeneralInfoActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".DestinationsActivity"></activity>
+        <activity android:name=".PostcardActivity"></activity>
+        
+        <uses-permission android:name="android.permission.INTERNET" />
     </application>
 </manifest>

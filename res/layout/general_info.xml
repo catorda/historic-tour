@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">"
+	  
+	  
+  <ImageView 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:src="@drawable/destination_salinas_banner_clear"/>
+	  
+ <TextView
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@drawable/destination_salinas_banner_clear"
+  	android:layout_alignParentBottom="true"
+	android:text="Welcome to the Salinas Historic Tours App!\n\nDiscover beautiful Salinas California,
+	where you'll find historic sites, unspoiled farmland, a quaint, historic downtown, and some of the
+	friendliest people around. Salinas is famous for agriculture and our fresh, home-grown produce is
+	available around the world.  We are also known for the best year-round climate in the entire North
+	American continent, and have some of the cleanest air in the United States of America!" />
+</RelativeLayout>
