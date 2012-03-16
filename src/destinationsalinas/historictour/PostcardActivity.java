@@ -7,6 +7,7 @@ import java.io.FileOutputStream;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -14,10 +15,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class PostcardActivity extends Activity implements OnClickListener{
 
@@ -34,7 +38,11 @@ public class PostcardActivity extends Activity implements OnClickListener{
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.postcard);
+		if(this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+			setContentView(R.layout.postcard_landscape);
+		} else {
+			setContentView(R.layout.postcard);
+		}
 
 		takePicture = (Button) findViewById(R.id.takepicture_button);
 		takePicture.setOnClickListener(this);
@@ -43,25 +51,31 @@ public class PostcardActivity extends Activity implements OnClickListener{
 		selectPicture = (Button) findViewById(R.id.selectpicture_button);
 		selectPicture.setOnClickListener(this);
 		
-		if(savedInstanceState != null && savedInstanceState.containsKey(POSTCARD_PIC_KEY)) {
-			byte[] data = savedInstanceState.getByteArray(POSTCARD_PIC_KEY); 
-			Bitmap pic = BitmapFactory.decodeByteArray(data, 0, data.length); 
-			ImageView pictureHolder = (ImageView) findViewById(R.id.picturetaken_imageview);
-			pictureHolder.setImageBitmap(pic);
-			pic.recycle();
-		}
+		File photo = new File(Environment.getExternalStorageDirectory(), "Pic.jpg");     
+		Uri selectedImageUri = Uri.fromFile(photo); 
+		Bitmap b = BitmapFactory.decodeFile(photo.getAbsolutePath());
+		Bitmap smallB= Bitmap.createScaledBitmap(b, 300, 300, false);
+		ImageView pictureHolder = (ImageView) findViewById(R.id.picturetaken_imageview);
+		pictureHolder.setImageBitmap(smallB);
+		b.recycle();
+		Log.i("Example", "Screen Change");
+		
 	}
 
 	@Override 
 	protected void onSaveInstanceState(Bundle outState) {
 		byte[] data = null;       
 		if(this.findViewById(R.id.picturetaken_imageview).getDrawingCache(false) != null) {
-			Bitmap bi = this.findViewById(R.id.picturetaken_imageview).getDrawingCache(false);                   
+			File photo = new File(Environment.getExternalStorageDirectory(), "Pic.jpg");     
+			Uri selectedImageUri = Uri.fromFile(photo); 
+			Bitmap b = BitmapFactory.decodeFile(photo.getAbsolutePath());
+			Bitmap smallB= Bitmap.createScaledBitmap(b, 300, 300, false);
 			ByteArrayOutputStream baos = new ByteArrayOutputStream();                       
-			bi.compress(Bitmap.CompressFormat.JPEG, 100, baos);                       
+			smallB.compress(Bitmap.CompressFormat.JPEG, 100, baos);                       
 			data = baos.toByteArray();   
 			outState.putByteArray(POSTCARD_PIC_KEY, data);
 		}
+		Log.i("Example", "onsaved instance state");
 		super.onSaveInstanceState(outState);
 	}
 	@Override
@@ -127,6 +141,7 @@ public class PostcardActivity extends Activity implements OnClickListener{
 			}
 		}
 	}
+	
 
 	private String getPath(Uri uri) {         
 		String[] projection = { MediaStore.Images.Media.DATA };         
