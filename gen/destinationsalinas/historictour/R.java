@@ -12,20 +12,23 @@ public final class R {
     }
     public static final class drawable {
         public static final int blue_marker=0x7f020000;
-        public static final int destination_salinas_banner_clear=0x7f020001;
-        public static final int green_marker=0x7f020002;
-        public static final int icon=0x7f020003;
-        public static final int light_blue_marker=0x7f020004;
-        public static final int pink_marker=0x7f020005;
-        public static final int purple_marker=0x7f020006;
-        public static final int red_marker=0x7f020007;
-        public static final int yellow_marker=0x7f020008;
+        public static final int close=0x7f020001;
+        public static final int destination_salinas_banner_clear=0x7f020002;
+        public static final int facebook_icon=0x7f020003;
+        public static final int green_marker=0x7f020004;
+        public static final int icon=0x7f020005;
+        public static final int light_blue_marker=0x7f020006;
+        public static final int pink_marker=0x7f020007;
+        public static final int purple_marker=0x7f020008;
+        public static final int red_marker=0x7f020009;
+        public static final int yellow_marker=0x7f02000a;
     }
     public static final class id {
         public static final int mainlayout=0x7f050000;
         public static final int mapview=0x7f050001;
-        public static final int picturetaken_imageview=0x7f050003;
-        public static final int signon=0x7f050004;
+        public static final int picturetaken_imageview=0x7f050004;
+        public static final int postcard_send=0x7f050005;
+        public static final int selectpicture_button=0x7f050003;
         public static final int takepicture_button=0x7f050002;
     }
     public static final class layout {

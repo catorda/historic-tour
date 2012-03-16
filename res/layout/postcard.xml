@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical" >
-    <Button 
-        android:id="@+id/takepicture_button" 
+    <TextView 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/take_picture" />
+        android:text="Send a Postcard" 
+        android:textSize="25dp" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        <Button 
+	        android:id="@+id/takepicture_button" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/take_picture" />
+        <Button 
+            android:id="@+id/selectpicture_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select from Gallery" />        
+    </LinearLayout>
     <ImageView 
         android:id="@+id/picturetaken_imageview"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:maxWidth="200dp"
+        android:maxHeight="150dp"
+        android:adjustViewBounds="true"/>
+    <LinearLayout 
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"/>
-    <Button 
-		android:id="@+id/signon"
-		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button 
+		android:id="@+id/postcard_send"
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="@string/facebook" />
+		android:text="Send" />
+
+    </LinearLayout>
 
 </LinearLayout>

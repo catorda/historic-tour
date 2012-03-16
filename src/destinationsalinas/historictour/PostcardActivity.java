@@ -1,40 +1,34 @@
 package destinationsalinas.historictour;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.net.MalformedURLException;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+import java.io.FileOutputStream;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
-import android.text.method.BaseKeyListener;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
-
-import com.facebook.android.*;
-import com.facebook.android.AsyncFacebookRunner.RequestListener;
-import com.facebook.android.Facebook.DialogListener;
 
 public class PostcardActivity extends Activity implements OnClickListener{
 
 	private final String FACEBOOK_APP_ID = "266208693459714";
 	private final String POSTCARD_PIC_KEY = "postcard-picture";
 	private final int PICTURE_RESULT = 2387;
-	Button signOn; 
-	ImageView pictureHolder;
-	Button takePicture;
-	Facebook facebook = new Facebook(FACEBOOK_APP_ID);
-	Bitmap pic; 
+	private final int SELECT_PICTURE_REQUEST = 3837;
+	Button sendButton; 
+	Button takePicture; 
+	Button selectPicture;
+	Uri pictureUri; 
 
 	/** Called when the activity is first created. */
 	@Override
@@ -44,22 +38,25 @@ public class PostcardActivity extends Activity implements OnClickListener{
 
 		takePicture = (Button) findViewById(R.id.takepicture_button);
 		takePicture.setOnClickListener(this);
-		pictureHolder = (ImageView) findViewById(R.id.picturetaken_imageview);
-		signOn = (Button) findViewById(R.id.signon);
-		signOn.setOnClickListener(this);
+		sendButton = (Button) findViewById(R.id.postcard_send);
+		sendButton.setOnClickListener(this);
+		selectPicture = (Button) findViewById(R.id.selectpicture_button);
+		selectPicture.setOnClickListener(this);
 		
 		if(savedInstanceState != null && savedInstanceState.containsKey(POSTCARD_PIC_KEY)) {
 			byte[] data = savedInstanceState.getByteArray(POSTCARD_PIC_KEY); 
-			pic = BitmapFactory.decodeByteArray(data, 0, data.length); 
+			Bitmap pic = BitmapFactory.decodeByteArray(data, 0, data.length); 
+			ImageView pictureHolder = (ImageView) findViewById(R.id.picturetaken_imageview);
 			pictureHolder.setImageBitmap(pic);
+			pic.recycle();
 		}
 	}
 
 	@Override 
 	protected void onSaveInstanceState(Bundle outState) {
 		byte[] data = null;       
-		if(pic != null) {
-			Bitmap bi = pic;                   
+		if(this.findViewById(R.id.picturetaken_imageview).getDrawingCache(false) != null) {
+			Bitmap bi = this.findViewById(R.id.picturetaken_imageview).getDrawingCache(false);                   
 			ByteArrayOutputStream baos = new ByteArrayOutputStream();                       
 			bi.compress(Bitmap.CompressFormat.JPEG, 100, baos);                       
 			data = baos.toByteArray();   
@@ -69,147 +66,77 @@ public class PostcardActivity extends Activity implements OnClickListener{
 	}
 	@Override
 	public void onClick(View v) {
-		if(v.getId() == R.id.signon) {
-			if(!facebook.isSessionValid()) {
-				
-				String[] permissions = {"publish_stream","photo_upload" };
-				
-				Log.i("Facebook-Example", "not logged in");
-				facebook.authorize(this, permissions, Facebook.FORCE_DIALOG_AUTH, new DialogListener() {
-					@Override
-					public void onComplete(Bundle values) {}
-
-					@Override
-					public void onFacebookError(FacebookError error) {}
-
-					@Override
-					public void onError(DialogError e) {}
-
-					@Override
-					public void onCancel() {}
-				});
-			}else {
-				Log.i("Facebook-Example", "logged in");
-				postImage();
-			}
+		if(v.getId() == R.id.postcard_send) {
+			Intent picMessageIntent = new Intent(android.content.Intent.ACTION_SEND);   
+			picMessageIntent.setType("image/jpeg");  
+			picMessageIntent.putExtra(Intent.EXTRA_STREAM, pictureUri); 
+			startActivity(Intent.createChooser(picMessageIntent, "Send your picture using:")); 
 
 		} else if(v.getId() == R.id.takepicture_button) {
-			Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);            
+			Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE); 
+			 File photo = new File(Environment.getExternalStorageDirectory(), "Pic.jpg");     
+			 camera.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photo)); 
+			 pictureUri = Uri.fromFile(photo);
 			this.startActivityForResult(camera, PICTURE_RESULT); 
+		} else if(v.getId() == R.id.selectpicture_button) {
+			Intent intent = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);   
+			startActivityForResult(intent, SELECT_PICTURE_REQUEST);
 		}
 	}
 
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
-		facebook.authorizeCallback(requestCode, resultCode, data);
 		if(requestCode == PICTURE_RESULT) {
-			if (resultCode == Activity.RESULT_OK) {                 
-				// Display image received on the view                  
-				Bundle b = data.getExtras(); // Kept as a Bundle to check for other things in my actual code                  
-				pic = (Bitmap) b.get("data");                   
-				if (pic != null) { 
-					// Display your image in an ImageView in your layout (if you want to test it)                      
-					pictureHolder.setImageBitmap(pic);                      
-					pictureHolder.invalidate();                  
-				}              
+			if (resultCode == Activity.RESULT_OK) {  
+				File photo = new File(Environment.getExternalStorageDirectory(), "Pic.jpg");     
+				Uri selectedImageUri = Uri.fromFile(photo); 
+				Bitmap b = BitmapFactory.decodeFile(photo.getAbsolutePath());
+				Bitmap smallB= Bitmap.createScaledBitmap(b, 300, 300, false);
+				FileOutputStream fos;
+				try {
+					fos = new FileOutputStream(photo);
+					smallB.compress(Bitmap.CompressFormat.JPEG, 100, fos);
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				pictureUri = selectedImageUri;           
+				ImageView pictureHolder = (ImageView) findViewById(R.id.picturetaken_imageview);
+				pictureHolder.setImageBitmap(smallB);
 			} else if (resultCode == Activity.RESULT_CANCELED) {
 			} 
+		} else if (requestCode == SELECT_PICTURE_REQUEST) {
+			if(resultCode == Activity.RESULT_OK) {
+				File photo = new File(Environment.getExternalStorageDirectory(), "Pic.jpg");   
+				Uri selectedImageUri = data.getData(); 
+				pictureUri = selectedImageUri; 
+				String selectedImagePath = getPath(selectedImageUri);   
+				Bitmap b = BitmapFactory.decodeFile(selectedImagePath);
+				Bitmap smallB= Bitmap.createScaledBitmap(b, 300, 300, false);
+				FileOutputStream fos;
+				try {
+					fos = new FileOutputStream(photo);
+					smallB.compress(Bitmap.CompressFormat.JPEG, 100, fos);
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				ImageView pictureHolder = (ImageView) findViewById(R.id.picturetaken_imageview);
+				pictureHolder.setImageBitmap(smallB);
+			}
 		}
 	}
 
-	public void postImage(){      
-		byte[] data = null;                         
-		Bitmap bi = pic;                   
-		ByteArrayOutputStream baos = new ByteArrayOutputStream();                       
-		bi.compress(Bitmap.CompressFormat.JPEG, 100, baos);                       
-		data = baos.toByteArray();                         
-		final Bundle params = new Bundle();                       
-		params.putString(Facebook.TOKEN, facebook.getAccessToken());                       
-		params.putString("method", "photos.upload");                       
-		params.putByteArray("picture", data);
-		//params.putString("caption", value)
-		final AsyncFacebookRunner mAsyncRunner = new AsyncFacebookRunner(facebook);
-		facebook.dialog(this, "photos.upload", new DialogListener() {
-
-			@Override
-			public void onComplete(Bundle values) {
-				mAsyncRunner.request(null, params, "POST", new SampleUploadListener(), null);  
-				Log.i("Facebook-Example", "image posted");
-				
-			}
-
-			@Override
-			public void onFacebookError(FacebookError e) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			@Override
-			public void onError(DialogError e) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			@Override
-			public void onCancel() {
-				// TODO Auto-generated method stub
-				
-			}
-			
-		});
-	}
+	private String getPath(Uri uri) {         
+		String[] projection = { MediaStore.Images.Media.DATA };         
+		Cursor cursor = managedQuery(uri, projection, null, null, null);         
+		int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);         
+		cursor.moveToFirst();         
+		return cursor.getString(column_index);     
+	} 
 	
-	public class SampleUploadListener extends BaseKeyListener implements RequestListener {      
-		public void onComplete(final String response, final Object state) {         
-			try {             // process the response here: (executed in background thread)             
-				Log.d("Facebook-Example", "Response: " + response.toString());             
-				JSONObject json = Util.parseJson(response);             
-				final String src = json.getString("src");              
-				// then post the processed result back to the UI thread             
-				// if we do not do this, an runtime exception will be generated             
-				// e.g. "CalledFromWrongThreadException: Only the original             
-				// thread that created a view hierarchy can touch its views."          
-			} catch (JSONException e) {             
-				Log.w("Facebook-Example", "JSON Error in response");         
-			} catch (FacebookError e) {             
-				Log.w("Facebook-Example", "Facebook Error: " + e.getMessage());         
-			}     
-		}      
-		
-		public void onFacebookError(FacebookError e, Object state) {         
-			// TODO Auto-generated method stub      
-		}      
-		
-		public Bitmap getInputType(Bitmap img) {         
-			// TODO Auto-generated method stub         
-			return img;     
-		}      
-		
-		@Override     
-		public int getInputType() {         
-			// TODO Auto-generated method stub         
-			return 0;     
-		}      
-		
-		@Override     
-		public void onIOException(IOException e, Object state) {         
-			// TODO Auto-generated method stub      
-		}      
-		
-		@Override     
-		public void onFileNotFoundException(FileNotFoundException e, Object state) {         
-			// TODO Auto-generated method stub      
-		}      
-		
-		@Override     
-		public void onMalformedURLException(MalformedURLException e, Object state) {         
-			// TODO Auto-generated method stub      
-		} 
-	}  
-		
-	
-	}
+}
 
 
 
