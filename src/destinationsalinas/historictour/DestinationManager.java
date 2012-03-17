@@ -12,8 +12,8 @@ import destinationsalinas.historictour.R;
 
 public class DestinationManager {
 	
-	private String [] data = new String[9];
-	private static ArrayList<DestinationClass> dataList = new ArrayList<DestinationClass>();
+	private ArrayList<DestinationClass> dataList = new ArrayList<DestinationClass>();
+	String str;
 
 	public DestinationManager(Resources res){
     	InputStream in;
@@ -21,23 +21,15 @@ public class DestinationManager {
     	int rID = R.raw.destinations; 
     	in = res.openRawResource(rID);
     	try {
-            byte[] buffer = new byte[in.available()];  
-            in.read(buffer);  
-            ByteArrayOutputStream oS = new ByteArrayOutputStream();  
-            oS.write(buffer);
-            
-		    	StringTokenizer st;
-				String line;
-				line = oS.toString();
-					st = new StringTokenizer(line, ":");
-					while(st.hasMoreTokens()){
-						for(int i = 0; i < 9; i++){
-						data[i] = st.nextToken();
-						}
-						dataList.add(new DestinationClass(data));
+			BufferedReader f = new BufferedReader(new InputStreamReader(
+					in));
+			while (f.readLine() != null) {
+				str = f.readLine();
+				System.out.println("str" + str);
+				String[] strArray = str.split(":");
+						dataList.add(new DestinationClass(strArray));
 					}
 			in.close();
-			oS.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -47,13 +39,21 @@ public class DestinationManager {
 		}
 	}
 	
-	public DestinationClass getDestination(int i){
+	public DestinationClass getDestinationBySiteNumber(int i){
 		for(int k = 0; k < dataList.size(); k++){
 			if(dataList.get(k).getNumber() == i){
 				return dataList.get(k);
 			}
 		}
 		return null;
+	}
+	
+	public DestinationClass getDestination(int i){
+		return dataList.get(i);
+	}
+	
+	public int getSize(){
+		return dataList.size();
 	}
 	
 	public static ArrayList<DestinationClass> getDestinationList() { 
