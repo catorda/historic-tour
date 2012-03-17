@@ -23,7 +23,7 @@ public class Tabs extends TabActivity {
         tabHost.addTab(spec);
 
         // Add intent for DestinationsActivity
-        intent = new Intent(this, DestinationsActivity.class);
+        intent = new Intent(this, DestinationActivity.class);
         spec = tabHost.newTabSpec("destinations").setIndicator("Destinations", res.getDrawable(R.drawable.icon)).setContent(intent);
         tabHost.addTab(spec);
         
