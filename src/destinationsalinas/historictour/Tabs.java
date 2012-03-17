@@ -23,21 +23,21 @@ public class Tabs extends TabActivity {
         Intent intent;
         
         intent = new Intent(this, GeneralInfoActivity.class);
-        spec = tabHost.newTabSpec("general").setIndicator("General", res.getDrawable(R.drawable.icon)).setContent(intent);
+        spec = tabHost.newTabSpec("general").setIndicator("General", res.getDrawable(R.drawable.info)).setContent(intent);
         tabHost.addTab(spec);
 
         // Add intent for DestinationsActivity
-        intent = new Intent(this, DestinationActivity.class);
-        spec = tabHost.newTabSpec("destinations").setIndicator("Destinations", res.getDrawable(R.drawable.icon)).setContent(intent);
+        intent = new Intent(this, DestinationListActivity.class);
+        spec = tabHost.newTabSpec("destinations").setIndicator("Destinations", res.getDrawable(R.drawable.home)).setContent(intent);
         tabHost.addTab(spec);
         
         // Add intent for PostcardActivity
         intent = new Intent(this, PostcardActivity.class);
-        spec = tabHost.newTabSpec("postcard").setIndicator("Postcard", res.getDrawable(R.drawable.icon)).setContent(intent);
+        spec = tabHost.newTabSpec("postcard").setIndicator("Postcard", res.getDrawable(R.drawable.picture)).setContent(intent);
         tabHost.addTab(spec);
         
         intent = new Intent(this, MapsActivity.class);
-        spec = tabHost.newTabSpec("Map").setIndicator("Map", res.getDrawable(R.drawable.icon)).setContent(intent);
+        spec = tabHost.newTabSpec("Map").setIndicator("Map", res.getDrawable(R.drawable.maps)).setContent(intent);
         tabHost.addTab(spec);
         
         tabHost.setCurrentTab(0);
