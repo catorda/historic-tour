@@ -17,7 +17,7 @@
   	android:layout_height="wrap_content"
   	android:layout_below="@drawable/destination_salinas_banner_clear"
   	android:layout_alignParentBottom="true"
-	android:text="Welcome to the Salinas Historic Tours App!\n\nDiscover beautiful Salinas California,
+	android:text="Welcome to the Salinas Historic Self-Guided Tour App!\n\nDiscover beautiful Salinas California,
 	where you'll find historic sites, unspoiled farmland, a quaint, historic downtown, and some of the
 	friendliest people around. Salinas is famous for agriculture and our fresh, home-grown produce is
 	available around the world.  We are also known for the best year-round climate in the entire North
