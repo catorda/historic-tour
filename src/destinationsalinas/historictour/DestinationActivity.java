@@ -35,6 +35,9 @@ public class DestinationActivity extends Activity{
     	image = (ImageView) findViewById(R.id.image);
     	
     	Bundle extras = this.getIntent().getExtras();
+    	int siteNumber = extras.getInt("destination-number");
+    	DestinationManager dm = new DestinationManager(this.getResources()); 
+    	setDestination(dm.getDestinationBySiteNumber(siteNumber));
     	
     }
 
