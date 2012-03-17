@@ -4,35 +4,48 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:gravity="center"
-    android:orientation="horizontal" >
-    <LinearLayout 
+    android:orientation="horizontal" >
+
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
 	    <TextView 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="Send a Postcard" 
+	        android:gravity="center"
 	        android:textSize="25dp" />
 
 	    <LinearLayout
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:gravity="right"
-	        android:orientation="vertical" >
-
-	        <Button
-	            android:id="@+id/takepicture_button"
+	        android:gravity="center"
+	        android:orientation="vertical" 
+	        android:paddingBottom="7dp">
+	        <TextView
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/take_picture" />
+	            android:text="Insert a Picture" />
 
-	        <Button 
-	            android:id="@+id/selectpicture_button"
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:text="Select from Gallery"
-	             />        
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal">
+			     <Button
+		            android:id="@+id/takepicture_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/camera" />
+		        <Button 
+		            android:id="@+id/selectpicture_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/gallery"
+		             />        
+			</LinearLayout>
 	        <Button 
 				android:id="@+id/postcard_send"
 				android:layout_width="wrap_content"

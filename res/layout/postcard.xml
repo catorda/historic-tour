@@ -17,26 +17,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" 
         android:orientation="horizontal">
+        <TextView 
+            android:text="Insert a Picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
         <Button 
 	        android:id="@+id/takepicture_button" 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="@string/take_picture" />
+	        android:background="@drawable/camera"/>
         <Button 
             android:id="@+id/selectpicture_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select from Gallery" />        
+            android:background="@drawable/gallery" />        
     </LinearLayout>
 
     <ImageView
         android:id="@+id/picturetaken_imageview"
         android:layout_width="200dp"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
         android:adjustViewBounds="true"
-        android:maxHeight="600dp"
-        android:maxWidth="400dp" />
+        android:maxHeight="300dp"
+        android:maxWidth="300dp"
+        android:background="#FFFFFF" />
 
     <LinearLayout
         android:layout_width="fill_parent"

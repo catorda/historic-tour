@@ -52,13 +52,16 @@ public class PostcardActivity extends Activity implements OnClickListener{
 		selectPicture.setOnClickListener(this);
 		
 		File photo = new File(Environment.getExternalStorageDirectory(), "Pic.jpg");     
-		Uri selectedImageUri = Uri.fromFile(photo); 
+		Uri selectedImageUri = Uri.fromFile(photo);
 		Bitmap b = BitmapFactory.decodeFile(photo.getAbsolutePath());
-		Bitmap smallB= Bitmap.createScaledBitmap(b, 300, 300, false);
-		ImageView pictureHolder = (ImageView) findViewById(R.id.picturetaken_imageview);
-		pictureHolder.setImageBitmap(smallB);
-		b.recycle();
-		Log.i("Example", "Screen Change");
+		if(b != null) {
+			Bitmap smallB= Bitmap.createScaledBitmap(b, 300, 300, false);
+			ImageView pictureHolder = (ImageView) findViewById(R.id.picturetaken_imageview);
+			pictureHolder.setImageBitmap(smallB);
+			b.recycle();
+			Log.i("Example", "Screen Change");
+		}
+		
 		
 	}
 
