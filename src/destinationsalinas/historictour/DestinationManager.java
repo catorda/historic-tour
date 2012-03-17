@@ -31,7 +31,7 @@ public class DestinationManager {
 				line = oS.toString();
 					st = new StringTokenizer(line, ":");
 					while(st.hasMoreTokens()){
-						for(int i = 0; i < 6; i++){
+						for(int i = 0; i < 9; i++){
 						data[i] = st.nextToken();
 						}
 						dataList.add(new DestinationClass(data));

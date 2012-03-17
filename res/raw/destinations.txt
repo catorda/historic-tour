@@ -1,78 +1,78 @@
-01:Steinbeck House:132 Central Avenue:8314222735:Description for testing purposes:site1
-02:Amtrak Station:11 Station Place:8008727245:Description for testing purposes:site2
-03:Railway Express Agency:26 Station Place:8317546787:Description for testing purposes:site3
-04:Harvey House:132 Station Place:4153816737:Description for testing purposes:site4
-05:The Californian:123 West Alisal Street:8314242221:Description for testing purposes:site5
-06:Monterey County Courthouse:240 Church Street: :Description for testing purposes:site6
-07:Steinbeck Station Post Office:227 Alisal Street:8314242261:Description for testing purposes:site7
-08:Salinas Armory:West Alisal Street:8317578383:Description for testing purposes:site8
-09:Center for Community Advocacy:22 West Gabilan:8317532324:Description for testing purposes:site9
-10:Old Post Office:12 West Gabilan:8314246468:Description for testing purposes:site10
-11:Salinas City Bank:4 West Gabilan Street:8317711990:Description for testing purposes:site11
-12:Monterey County Bank:200 Main Street:8317570175:Description for testing purposes:site12
-13:Bank of Italy:202 Main Street:8314492474:Description for testing purposes:site13
-14:Old Livery Stables:17 East Gabilan Street:83177729597:Description for testing purposes:site14
-15:Porter & Irvine's:210 Main Street:8314221760:Description for testing purposes:site15
-16:Fox Theater:239 Main Street:8316750521:Description for testing purposes:site16
-17:Jeffrey Hotel:269 Main Street:8317573663:Description for testing purposes:site17
-18:Bell's Candy:242 Main Street:8317699696:Description for testing purposes:site18
-19:Elk's Club:247 Main Street:831775421:Description for testing purposes:site19
-20:Farmer's Mercantile:300 Main Street:8317711990:Description for testing purposes:site20
-21:Steinbeck Feed Store:332 Main Street:8314241981:Description for testing purposes:site21
-22:Forester's Hall:371 Main Street:8317574633:Description for testing purposes:site22
-23:El Rey Theater:364-365 Main Street:8317711990:Description for testing purposes:site23
-24:Muller's Funeral Chapel:313 Main Street:8317750712:Description for testing purposes:site24
-25:Salinas National Bank:301 Main Street:8317371200:Description for testing purposes:site25
-26:J.H. McDougall:171 Main & 5 West Gabilan:8317841125:Description for testing purposes:site26
-27:First National Bank Of Salinas:165 Main Street:8317582337:Description for testing purposes:site27
-28:Rodeo Cafe:131 Main Street:8314246012:Description for testing purposes:site28
-29:Mayer's Butcher Shop:129 Main Street:8314225500:Description for testing purposes:site29
-30:Pia's Bi-Rite Grocery:127 Main Street:8317700992:Description for testing purposes:site30
-31:National Steinbeck Center:1 Main Street:8317754738:Description for testing purposes:site31
-32:The Garden of Memories:13 Abbott Street:8314226417:Description for testing purposes:site32
-33:Boronda Adobe:333 Boronda Road:8317578085:Description for testing purposes:site33
-34:Cominos Hotel:269 Main Street:8317573663:Description for testing purposes:site34
-35:White Theater, Crystal Theater, and more:411 Central Avenue:8317556700:Description for testing purposes:site35
-36:Hartnell College:411 Central Avenue:8317556700:Description for testing purposes:site36
-37:Central Park:400 Central Avenue:8317711990:Description for testing purposes:site37
-38:Queen Anne Cottage:30 Central Avenue:8317711990:Description for testing purposes:site38
-39:California Bugalow:36 Central Avenue:8317711990:Description for testing purposes:site39
-40:The Austin House:40 Central Avenue:8317711990:Description for testing purposes:site40
-41:Poze Eade House:106 Central Avenue:831771990:Description for testing purposes:site41
-42:Mayer House:134 Central Avenue:8317711990:Description for testing purposes:site42
-43:Spenish Revival House:140 Central Avenue:8317711990:Description for testing purposes:site43
-44:P.P. Krough Residence:146 Central Avenue:8317711990:Description for testing purposes:site44
-45:Sargent House:154 Central Avenue:8317711990:Description for testing purposes:site45
-46:The Spanish House:158 Central Avenue:8317711990:Description for testing purposes:site46
-47:Italianate Cottages:149-149 1/2 Central Avenue:8317711990:Description for testing purposes:site47
-48:American Foursquare House:147 Central Avenue:8317711990:Description for testing purposes:site48
-49:Colonial Revival House:141 Central Avenue:83177711990:Description for testing purposes:site49
-50:Abbott House:156 Central Avenue:8317711990:Description for testing purposes:site50
-50:Design House:109 Central Avenue:83177711990:Description for testing purposes:site50b
-51:Roosevelt School:Capitol & Central Avenue:8317711990:Description for testing purposes:site51
-53:Spring School:30 Hitchcock Road:8314551868:Description for testing purposes:site0
-54:The Farm:Hwy 68 @ Spreckles exit:8314552575:Description for testing purposes:site0
-55:Chateau Coralini:100 River Road:8314552100:Description for testing purposes:site0
-56:Wild Things:400 River Road:8314551901:Description for testing purposes:site0
-57:Marilyn Remark:645 River Road:8314559310:Description for testing purposes:site0
-58:Barlocker's Rustiling Oaks Ranch:313 Limekiln Road:831901898:Description for testing purposes:site0
-59:Pessagno Winerey:1645 River Road:8314559463:Description for testing purposes:site0
-61:Ray Franscioni Wines:32720 River Road:8316753548:Description for testing purposes:site0
-62:Labor Camp:36571 Foothill Road:8310000000:Description for testing purposes:site0
-63:Mission Soledad:36641 Fort Romie Road:8316782586:Description for testing purposes:site0
-64:Mesa De Sol:000000 Arroyo Seco Road:8310000000:Description for testing purposes:site0
-65:Boekenoogen:Fairview Road:8316753549:Description for testing purposes:site0
-66:Wrath Wines:35801 Foothill Road:8316782992:Description for testing purposes:site0
-67:Hahn Estates Smith & Hook:37700 Foothill Road:831684555:Description for testing purposes:site0
-68:Paraiso Vineyards:37500 Foothill Road:8316780330:Description for testing purposes:site0
-69:Ventana Vineyards: 38740 Los Coches Road:831682900:Description for testing purposes:site0
-70:Scheid Vineyards:1972 Hobson Avenue:8313860316:Description for testing purposes:site0
-71:Sycamore Cellars Winery:45185 Arroyo Seco Road:8316745760:Description for testing purposes:site0
-73:Chalone:32025 Stonewall Canyon Road:8316781717:Description for testing purposes:site0
-74:Pinnacles National Monument:2400 Hwy 146:8313894485:Description for testing purposes:site0
-75:Inn at the Pinnacles:32025 Stonewall Canyon Road:8316782400:Description for testing purposes:site0
-76:Arroyo Seco:00000 Arroyo Seco Road:8310000000:Description for testing purposes:site0
-83:Odd Fellows Hall:215 Main Street:8314492474:Description for testing purposes:site0
-97:Caboose:26 Station Place:8317589126:Description for testing purposes:site0
-98:Locomotive:26 Station Place:8317589126:Description for testing purposes:site0
-99:Reefer:26 Station Place:8317589126:Description for testing purposes:site0
+01:Steinbeck House:132 Central Avenue:8314222735:Description for testing purposes:site1:-121.659355:36.676643:0.000000:
+02:Amtrak Station:11 Station Place:8008727245:Description for testing purposes:site2: -121.657257:36.679398:0.000000:
+03:Railway Express Agency:26 Station Place:8317546787:Description for testing purposes:site3:-121.657044,36.678014,0.000000:
+04:Harvey House:132 Station Place:4153816737:Description for testing purposes:site4:-121.656097:36.678902:0.000000:
+05:The Californian:123 West Alisal Street:8314242221:Description for testing purposes:site5:-121.658501:36.672981:0.000000:
+06:Monterey County Courthouse:240 Church Street: :Description for testing purposes:site6:-121.658501:36.673565:0.000000:
+07:Steinbeck Station Post Office:227 Alisal Street:8314242261:Description for testing purposes:site7:-121.657402:36.673580:0.000000:
+08:Salinas Armory:100 Howard Street:8317578383:Description for testing purposes:site8:-121.656610:36.674175:0.000000:
+09:Center for Community Advocacy:22 West Gabilan:8317532324:Description for testing purposes:site9:-121.656197:36.675491:0.000000:
+10:Old Post Office:12 West Gabilan:8314246468:Description for testing purposes:site10:-121.656037:36.675353:0.000000:
+11:Salinas City Bank:4 West Gabilan Street:8317711990:Description for testing purposes:site11:-121.655493:36.675407:0.000000:
+12:Monterey County Bank:200 Main Street:8317570175:Description for testing purposes:site12:-121.654961,36.675373,0.000000:
+13:Bank of Italy:202 Main Street:8314492474:Description for testing purposes:site13:-121.655373:36.675346:0.000000:
+14:Old Livery Stables:17 East Gabilan Street:83177729597:Description for testing purposes:site14:-121.654369:36.675534:0.000000:
+15:Porter & Irvine's:210 Main Street:8314221760:Description for testing purposes:site15:-121.655342:36.675060:0.000000:
+16:Fox Theater:241 Main Street:8316750521:Description for testing purposes:site16:-121.655053:36.674221:0.000000:
+17:Jeffrey Hotel:269 Main Street:8317573663:Description for testing purposes:site17:-121.654964:36.673752:0.000000:
+18:Belle's Candy:242 Main Street:8317699696:Description for testing purposes:site18:-121.655342:36.674854:0.000000:
+19:Elk's Club:247 Main Street:831775421:Description for testing purposes:site19:-121.654808:36.674648:0.000000:
+20:Farmer's Mercantile:300 Main Street:8317711990:Description for testing purposes:site20:-121.654999:36.673477:0.000000:
+21:Steinbeck Feed Store:332 Main Street:8314241981:Description for testing purposes:site21:-121.654884:36.673096:0.000000:
+22:Forester's Hall:371 Main Street:8317574633:Description for testing purposes:site22:-121.654335:36.672077:0.000000:
+23:El Rey Theater:364-365 Main Street:8317711990:Description for testing purposes:site23:-121.654465:36.672668:0.000000:
+24:Muller's Funeral Chapel:313 Main Street:8317750712:Description for testing purposes:site24:121.654617:36.673374:0.000000:
+25:Salinas National Bank:301 Main Street:8317371200:Description for testing purposes:site25:-121.654694:36.673580:0.000000:
+26:J.H. McDougall:171 Main & 5 West Gabilan:8317841125:Description for testing purposes:site26:-121.655067:36.675667:0.000000:
+27:First National Bank Of Salinas:165 Main Street:8317582337:Description for testing purposes:site27:-121.655067:36.675785:0.000000:
+28:Rodeo Cafe:131 Main Street:8314246012:Description for testing purposes:site28:-121.655289:36.676620:0.000000:
+29:Mayer's Butcher Shop:129 Main Street:8314225500:Description for testing purposes:site29:-121.654443:36.680038:0.000000:
+30:Pia's Bi-Rite Grocery:127 Main Street:8317700992:Description for testing purposes:site30:-121.654451:36.680018:0.000000:
+31:National Steinbeck Center:1 Main Street:8317754738:Description for testing purposes:site31:-121.655617:36.676918:0.000000:
+32:The Garden of Memories:13 Abbott Street:8314226417:Description for testing purposes:site32:-121.647656:36.670559:0.000000:
+33:Boronda Adobe:333 Boronda Road:8317578085:Description for testing purposes:site33:-121.677986:36.700272:0.000000:
+34:Cominos Hotel:269 Main Street:8317573663:Description for testing purposes:site34:-121.654964:36.673752:0.000000:
+35:White Theater, Crystal Theater, and more:411 Central Avenue:8317556700:Description for testing purposes:site35:-121.665382:36.675423:0.000000:
+36:Hartnell College:411 Central Avenue:8317556700:Description for testing purposes:site36:-121.665382:36.675423:0.000000:
+37:Central Park:400 Central Avenue:8317711990:Description for testing purposes:site37:-121.665157:36.675459:0.000000:
+38:Queen Anne Cottage:30 Central Avenue:8317711990:Description for testing purposes:site38:-121.656826:36.676534:0.000000:
+39:California Bugalow:36 Central Avenue:8317711990:Description for testing purposes:site39:-121.656898:36.676526:0.000000:
+40:The Austin House:40 Central Avenue:8317711990:Description for testing purposes:site40:-121.656946:36.676521:0.000000:
+41:Poze Eade House:106 Central Avenue:831771990:Description for testing purposes:site41:-121.657970:36.676403:0.000000:
+42:Mayer House:134 Central Avenue:8317711990:Description for testing purposes:site42:-121.659156:36.676259:0.000000:
+43:Spenish Revival House:140 Central Avenue:8317711990:Description for testing purposes:site43:-121.659854:36.676178:0.000000:
+44:P.P. Krough Residence:146 Central Avenue:8317711990:Description for testing purposes:site44:-121.660016:36.676157:0.000000:
+45:Sargent House:154 Central Avenue:8317711990:Description for testing purposes:site45:-121.660207:36.676132:0.000000:
+46:The Spanish House:158 Central Avenue:8317711990:Description for testing purposes:site46:-121.660266:36.676125:0.000000:
+47:Italianate Cottages:149-149 1/2 Central Avenue:8317711990:Description for testing purposes:site47:-121.660177:36.676135:0.000000:
+48:American Foursquare House:147 Central Avenue:8317711990:Description for testing purposes:site48:-121.660177:36.676135:0.000000:
+49:Colonial Revival House:141 Central Avenue:83177711990:Description for testing purposes:site49:-121.659854:36.676178:0.000000:
+50:Abbott House:156 Central Avenue:8317711990:Description for testing purposes:site50:-121.660236:36.676128:0.000000:
+50:Design House:109 Central Avenue:83177711990:Description for testing purposes:site50b:-121.657637:36.676444:0.000000:
+51:Roosevelt School:120 Capitol Street:8317711990:Description for testing purposes:site51:-121.660602:36.674785:0.000000:
+53:Spring School:30 Hitchcock Road:8314551868:Description for testing purposes:site0: -121.668295:36.646788:0.000000:
+54:The Farm:7 Foster Rd:8314552575:Description for testing purposes:site0:-121.668483:36.637111:0.000000:
+55:Chateau Coralini:100 River Road:8314552100:Description for testing purposes:site0: -121.670953:36.622387:0.000000:
+56:Wild Things:400 River Road:8314551901:Description for testing purposes:site0:-121.625107:36.597033:0.000000:
+57:Marilyn Remark:645 River Road:8314559310:Description for testing purposes:site0:-121.587882:36.576621:0.000000:
+58:Barlocker's Rustiling Oaks Ranch:313 Limekiln Road:831901898:Description for testing purposes:site0:-121.530797:36.509748:0.000000:
+59:Pessagno Winerey:1645 River Road:8314559463:Description for testing purposes:site0:-121.540800:36.540250:0.000000:
+61:Ray Franscioni Wines:32720 River Road:8316753548:Description for testing purposes:site0:-121.482059:36.47788:0.000000:
+62:Labor Camp:36571 Foothill Road:8310000000:Description for testing purposes:site0:-121.546353:36.66926:0.000000:
+63:Mission Soledad:36641 Fort Romie Road:8316782586:Description for testing purposes:site0: : :
+64:Mesa De Sol:000000 Arroyo Seco Road:8310000000:Description for testing purposes:site0: : :
+65:Boekenoogen:Fairview Road:8316753549:Description for testing purposes:site0: : :
+66:Wrath Wines:35801 Foothill Road:8316782992:Description for testing purposes:site0: : :
+67:Hahn Estates Smith & Hook:37700 Foothill Road:831684555:Description for testing purposes:site0: : :
+68:Paraiso Vineyards:37500 Foothill Road:8316780330:Description for testing purposes:site0: : :
+69:Ventana Vineyards: 38740 Los Coches Road:831682900:Description for testing purposes:site0: : :
+70:Scheid Vineyards:1972 Hobson Avenue:8313860316:Description for testing purposes:site0: : :
+71:Sycamore Cellars Winery:45185 Arroyo Seco Road:8316745760:Description for testing purposes:site0: : :
+73:Chalone:32025 Stonewall Canyon Road:8316781717:Description for testing purposes:site0: : :
+74:Pinnacles National Monument:2400 Hwy 146:8313894485:Description for testing purposes:site0: : :
+75:Inn at the Pinnacles:32025 Stonewall Canyon Road:8316782400:Description for testing purposes:site0: : :
+76:Arroyo Seco:00000 Arroyo Seco Road:8310000000:Description for testing purposes:site0: : :
+83:Odd Fellows Hall:215 Main Street:8314492474:Description for testing purposes:site0: : :
+97:Caboose:26 Station Place:8317589126:Description for testing purposes:site0: : :
+98:Locomotive:26 Station Place:8317589126:Description for testing purposes:site0: : :
+99:Reefer:26 Station Place:8317589126:Description for testing purposes:site0: : :
