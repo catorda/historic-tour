@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class DestinationAdapter extends ArrayAdapter<DestinationClass>{
@@ -37,8 +38,9 @@ public class DestinationAdapter extends ArrayAdapter<DestinationClass>{
 		tv2.setText(d.getAddress());
 		TextView tv3=(TextView) view.findViewById(R.id.textView3);
 		tv3.setText(d.getPhone());
+		ImageView imageview=(ImageView) view.findViewById(R.id.imageView1);
+		imageview.setImageLevel(d.getNumber());
 		return view;
 	}
 
 }
-
