@@ -13,7 +13,8 @@
         android:text="Send a Postcard"
         android:textSize="25dp" 
         android:textStyle="bold"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:padding="5dp"/>
 
     <LinearLayout 
         android:layout_width="match_parent"
@@ -23,7 +24,8 @@
             android:text="Insert a Picture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:padding="5dp" />
         <Button 
 	        android:id="@+id/takepicture_button" 
 	        android:layout_width="wrap_content"
