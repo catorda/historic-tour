@@ -33,6 +33,9 @@ public class DestinationActivity extends Activity{
     	number = (TextView) findViewById(R.id.number);
     	desc = (TextView) findViewById(R.id.desc);
     	image = (ImageView) findViewById(R.id.image);
+    	
+    	Bundle extras = this.getIntent().getExtras();
+    	
     }
 
 

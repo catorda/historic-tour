@@ -29,5 +29,6 @@
         <activity android:name=".GeneralInfoActivity" android:screenOrientation="portrait"></activity>
         <activity android:name=".DestinationActivity"></activity>
         <activity android:name=".PostcardActivity"></activity>
+        <activity android:name=".DestinationListActivity"></activity>
     </application>
 </manifest>
