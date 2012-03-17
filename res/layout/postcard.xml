@@ -25,12 +25,12 @@
 	        android:id="@+id/takepicture_button" 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:background="@drawable/camera"/>
+	        android:background="@drawable/camera64"/>
         <Button 
             android:id="@+id/selectpicture_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/gallery" />        
+            android:background="@drawable/gallery64" />        
     </LinearLayout>
 
     <ImageView
@@ -47,11 +47,12 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="bottom"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
 
         <Button 
 		android:id="@+id/postcard_send"
-		android:layout_width="wrap_content"
+		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:text="Send" />
 

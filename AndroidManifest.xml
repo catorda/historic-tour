@@ -27,7 +27,7 @@
         <activity android:name=".HistoricTourActivity"></activity>
         <activity android:name=".MapsActivity"></activity>
         <activity android:name=".GeneralInfoActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".DestinationsActivity"></activity>
+        <activity android:name=".DestinationActivity"></activity>
         <activity android:name=".PostcardActivity"></activity>
     </application>
 </manifest>
