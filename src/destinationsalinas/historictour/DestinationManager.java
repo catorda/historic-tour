@@ -48,6 +48,13 @@ public class DestinationManager {
 	}
 	
 	public DestinationClass getDestination(int i){
-		return dataList.get(i);
+		for(int k = 0; k < dataList.size(); k++){
+			if(dataList.get(k).getNumber() == i){
+				return dataList.get(k);
+			}
+		}
+		return null;
 	}
+	
+
 }
