@@ -1,78 +1,80 @@
-01:Steinbeck House:132 Central Avenue:8314222735:Description for testing purposes:site1:-121.659355:36.676643:0.000000:
-02:Amtrak Station:11 Station Place:8008727245:Description for testing purposes:site2:-121.657257:36.679398:0.000000:
-03:Railway Express Agency:26 Station Place:8317546787:Description for testing purposes:site3:-121.657044:36.678014:0.000000:
-04:Harvey House:132 Station Place:4153816737:Description for testing purposes:site4:-121.656097:36.678902:0.000000:
-05:The Californian:123 West Alisal Street:8314242221:Description for testing purposes:site5:-121.658501:36.672981:0.000000:
-06:Monterey County Courthouse:240 Church Street: :Description for testing purposes:site6:-121.658501:36.673565:0.000000:
-07:Steinbeck Station Post Office:227 Alisal Street:8314242261:Description for testing purposes:site7:-121.657402:36.673580:0.000000:
-08:Salinas Armory:100 Howard Street:8317578383:Description for testing purposes:site8:-121.656610:36.674175:0.000000:
-09:Center for Community Advocacy:22 West Gabilan:8317532324:Description for testing purposes:site9:-121.656197:36.675491:0.000000:
-10:Old Post Office:12 West Gabilan:8314246468:Description for testing purposes:site10:-121.656037:36.675353:0.000000:
-11:Salinas City Bank:4 West Gabilan Street:8317711990:Description for testing purposes:site11:-121.655493:36.675407:0.000000:
-12:Monterey County Bank:200 Main Street:8317570175:Description for testing purposes:site12:-121.654961:36.675373:0.000000:
-13:Bank of Italy:202 Main Street:8314492474:Description for testing purposes:site13:-121.655373:36.675346:0.000000:
-14:Old Livery Stables:17 East Gabilan Street:83177729597:Description for testing purposes:site14:-121.654369:36.675534:0.000000:
-15:Porter & Irvine's:210 Main Street:8314221760:Description for testing purposes:site15:-121.655342:36.675060:0.000000:
-16:Fox Theater:241 Main Street:8316750521:Description for testing purposes:site16:-121.655053:36.674221:0.000000:
-17:Jeffrey Hotel:269 Main Street:8317573663:Description for testing purposes:site17:-121.654964:36.673752:0.000000:
-18:Belle's Candy:242 Main Street:8317699696:Description for testing purposes:site18:-121.655342:36.674854:0.000000:
-19:Elk's Club:247 Main Street:831775421:Description for testing purposes:site19:-121.654808:36.674648:0.000000:
-20:Farmer's Mercantile:300 Main Street:8317711990:Description for testing purposes:site20:-121.654999:36.673477:0.000000:
-21:Steinbeck Feed Store:332 Main Street:8314241981:Description for testing purposes:site21:-121.654884:36.673096:0.000000:
-22:Forester's Hall:371 Main Street:8317574633:Description for testing purposes:site22:-121.654335:36.672077:0.000000:
-23:El Rey Theater:364-365 Main Street:8317711990:Description for testing purposes:site23:-121.654465:36.672668:0.000000:
-24:Muller's Funeral Chapel:313 Main Street:8317750712:Description for testing purposes:site24:121.654617:36.673374:0.000000:
-25:Salinas National Bank:301 Main Street:8317371200:Description for testing purposes:site25:-121.654694:36.673580:0.000000:
-26:J.H. McDougall:171 Main & 5 West Gabilan:8317841125:Description for testing purposes:site26:-121.655067:36.675667:0.000000:
-27:First National Bank Of Salinas:165 Main Street:8317582337:Description for testing purposes:site27:-121.655067:36.675785:0.000000:
-28:Rodeo Cafe:131 Main Street:8314246012:Description for testing purposes:site28:-121.655289:36.676620:0.000000:
-29:Mayer's Butcher Shop:129 Main Street:8314225500:Description for testing purposes:site29:-121.654443:36.680038:0.000000:
-30:Pia's Bi-Rite Grocery:127 Main Street:8317700992:Description for testing purposes:site30:-121.654451:36.680018:0.000000:
-31:National Steinbeck Center:1 Main Street:8317754738:Description for testing purposes:site31:-121.655617:36.676918:0.000000:
-32:The Garden of Memories:13 Abbott Street:8314226417:Description for testing purposes:site32:-121.647656:36.670559:0.000000:
-33:Boronda Adobe:333 Boronda Road:8317578085:Description for testing purposes:site33:-121.677986:36.700272:0.000000:
-34:Cominos Hotel:269 Main Street:8317573663:Description for testing purposes:site34:-121.654964:36.673752:0.000000:
-35:White Theater, Crystal Theater, and more:411 Central Avenue:8317556700:Description for testing purposes:site35:-121.665382:36.675423:0.000000:
-36:Hartnell College:411 Central Avenue:8317556700:Description for testing purposes:site36:-121.665382:36.675423:0.000000:
-37:Central Park:400 Central Avenue:8317711990:Description for testing purposes:site37:-121.665157:36.675459:0.000000:
-38:Queen Anne Cottage:30 Central Avenue:8317711990:Description for testing purposes:site38:-121.656826:36.676534:0.000000:
-39:California Bugalow:36 Central Avenue:8317711990:Description for testing purposes:site39:-121.656898:36.676526:0.000000:
-40:The Austin House:40 Central Avenue:8317711990:Description for testing purposes:site40:-121.656946:36.676521:0.000000:
-41:Poze Eade House:106 Central Avenue:831771990:Description for testing purposes:site41:-121.657970:36.676403:0.000000:
-42:Mayer House:134 Central Avenue:8317711990:Description for testing purposes:site42:-121.659156:36.676259:0.000000:
-43:Spenish Revival House:140 Central Avenue:8317711990:Description for testing purposes:site43:-121.659854:36.676178:0.000000:
-44:P.P. Krough Residence:146 Central Avenue:8317711990:Description for testing purposes:site44:-121.660016:36.676157:0.000000:
-45:Sargent House:154 Central Avenue:8317711990:Description for testing purposes:site45:-121.660207:36.676132:0.000000:
-46:The Spanish House:158 Central Avenue:8317711990:Description for testing purposes:site46:-121.660266:36.676125:0.000000:
-47:Italianate Cottages:149-149 1/2 Central Avenue:8317711990:Description for testing purposes:site47:-121.660177:36.676135:0.000000:
-48:American Foursquare House:147 Central Avenue:8317711990:Description for testing purposes:site48:-121.660177:36.676135:0.000000:
-49:Colonial Revival House:141 Central Avenue:83177711990:Description for testing purposes:site49:-121.659854:36.676178:0.000000:
-50:Abbott House:156 Central Avenue:8317711990:Description for testing purposes:site50:-121.660236:36.676128:0.000000:
-50:Design House:109 Central Avenue:83177711990:Description for testing purposes:site50b:-121.657637:36.676444:0.000000:
-51:Roosevelt School:120 Capitol Street:8317711990:Description for testing purposes:site51:-121.660602:36.674785:0.000000:
-53:Spring School:30 Hitchcock Road:8314551868:Description for testing purposes:site0: -121.668295:36.646788:0.000000:
-54:The Farm:7 Foster Rd:8314552575:Description for testing purposes:site0:-121.668483:36.637111:0.000000:
-55:Chateau Coralini:100 River Road:8314552100:Description for testing purposes:site0: -121.670953:36.622387:0.000000:
-56:Wild Things:400 River Road:8314551901:Description for testing purposes:site0:-121.625107:36.597033:0.000000:
-57:Marilyn Remark:645 River Road:8314559310:Description for testing purposes:site0:-121.587882:36.576621:0.000000:
-58:Barlocker's Rustiling Oaks Ranch:313 Limekiln Road:831901898:Description for testing purposes:site0:-121.530797:36.509748:0.000000:
-59:Pessagno Winerey:1645 River Road:8314559463:Description for testing purposes:site0:-121.540800:36.540250:0.000000:
-61:Ray Franscioni Wines:32720 River Road:8316753548:Description for testing purposes:site0:-121.482059:36.47788:0.000000:
-62:Labor Camp:36571 Foothill Road:8310000000:Description for testing purposes:site0:-121.546353:36.66926:0.000000:
-63:Mission Soledad:36641 Fort Romie Road:8316782586:Description for testing purposes:site0:0:0:0:
-64:Mesa De Sol:000000 Arroyo Seco Road:8310000000:Description for testing purposes:site0:0:0:0:
-65:Boekenoogen:Fairview Road:8316753549:Description for testing purposes:site0:0:0:0:
-66:Wrath Wines:35801 Foothill Road:8316782992:Description for testing purposes:site0:0:0:0:
-67:Hahn Estates Smith & Hook:37700 Foothill Road:831684555:Description for testing purposes:site0:0:0:0:
-68:Paraiso Vineyards:37500 Foothill Road:8316780330:Description for testing purposes:site0:0:0:0:
-69:Ventana Vineyards: 38740 Los Coches Road:831682900:Description for testing purposes:site0:0:0:0:
-70:Scheid Vineyards:1972 Hobson Avenue:8313860316:Description for testing purposes:site0:0:0:0:
-71:Sycamore Cellars Winery:45185 Arroyo Seco Road:8316745760:Description for testing purposes:site0:0:0:0:
-73:Chalone:32025 Stonewall Canyon Road:8316781717:Description for testing purposes:site0:0:0:0:
-74:Pinnacles National Monument:2400 Hwy 146:8313894485:Description for testing purposes:site0:0:0:0:
-75:Inn at the Pinnacles:32025 Stonewall Canyon Road:8316782400:Description for testing purposes:site0:0:0:0:
-76:Arroyo Seco:00000 Arroyo Seco Road:8310000000:Description for testing purposes:site0:0:0:0:
-83:Odd Fellows Hall:215 Main Street:8314492474:Description for testing purposes:site0:0:0:0:
-97:Caboose:26 Station Place:8317589126:Description for testing purposes:site0:0:0:0:
-98:Locomotive:26 Station Place:8317589126:Description for testing purposes:site0:0:0:0:
-99:Reefer:26 Station Place:8317589126:Description for testing purposes:site0:0:0:0:
+01:Steinbeck House:132 Central Avenue:8314222735:Where did Steinbeck write the Red Pony?:site1:-121.659355:36.676643:0.000000:
+02:Amtrak Station:11 Station Place:8008727245:Why did Salinas almost not get a train station?:site2:-121.657257:36.679398:0.000000:
+03:Railway Express Agency:26 Station Place:8317546787:What is the connection to UPS & Federal Express?:site3:-121.657044:36.678014:0.000000:
+04:Harvey House:132 Station Place:4153816737:What was discovered beneath the plaster in the hall?:site4:-121.656097:36.678902:0.000000:
+05:The Californian:123 West Alisal Street:8314242221:What is the significance of the symbols above the entrance to the building?:site5:-121.658501:36.672981:0.000000:
+06:Monterey County Courthouse:240 Church Street: :What innovative technique was used to construct the Salinas courthouse?:site6:-121.658501:36.673565:0.000000:
+07:Steinbeck Station Post Office:227 Alisal Street:8314242261:What was the artist's the connection to Frida Kahlo?:site7:-121.657402:36.673580:0.000000:
+08:Salinas Armory:100 Howard Street:8317578383:Why did Salinas have an armory?:site8:-121.656610:36.674175:0.000000:
+09:Center for Community Advocacy:22 West Gabilan:8317532324:What was the original purpose of this structure?:site9:-121.656197:36.675491:0.000000:
+10:Old Post Office:12 West Gabilan:8314246468:What Letters would John Steinbeck often receive here?:site10:-121.656037:36.675353:0.000000:
+11:Salinas City Bank:4 West Gabilan Street:8317711990:Built to house the first bank in Salinas in what year?:site11:-121.655493:36.675407:0.000000:
+12:Monterey County Bank:200 Main Street:8317570175:This building was constructed following which natural disaster?:site12:-121.654961:36.675373:0.000000:
+13:Bank of Italy:202 Main Street:8314492474:How did the founder of this bank change banking as we know it forever?:site13:-121.655373:36.675346:0.000000:
+14:Old Livery Stables:17 East Gabilan Street:83177729597:What other interesting business was conducted on this spot?:site14:-121.654369:36.675534:0.000000:
+15:Porter & Irvine's:210 Main Street:8314221760:Which character in East of Eden frequently visited this store?:site15:-121.655342:36.675060:0.000000:
+16:Fox Theater:241 Main Street:8316750521:What lies beneath the Art Deco Façade of the Fox?:site16:-121.655053:36.674221:0.000000:
+17:Jeffrey Hotel:269 Main Street:8317573663:Why was Mr. Jeffrey known as Mr. Salinas & which famous actress stayed here in 1948?:site17:-121.654964:36.673752:0.000000:
+18:Belle's Candy:242 Main Street:8317699696:Why did John Steinbeck have Kate in East of Eden purchase candy here?:site18:-121.655342:36.674854:0.000000:
+19:Elk's Club:247 Main Street:831775421:What animal head was displayed on the Main Street medallion architectural feature?:site19:-121.654808:36.674648:0.000000:
+20:Farmer's Mercantile:300 Main Street:8317711990:Why did the bricks on the first floor look different from the ones on the second story?:site20:-121.654999:36.673477:0.000000:
+21:Steinbeck Feed Store:332 Main Street:8314241981:Why was Steinbeck's father's feed store doomed to fail & what connection to his 1955 essay?:site21:-121.654884:36.673096:0.000000:
+22:Forester's Hall:371 Main Street:8317574633:What connection did the organization that founded this building have to insurance?:site22:-121.654335:36.672077:0.000000:
+23:El Rey Theater:364-365 Main Street:8317711990:Why were the historic murals inside this theater painted over?:site23:-121.654465:36.672668:0.000000:
+24:Muller's Funeral Chapel:313 Main Street:8317750712:The small side entrance was used for what type of horse-drawn vehicle?:site24:121.654617:36.673374:0.000000:
+25:Salinas National Bank:301 Main Street:8317371200:This Art Deco Moderne building was constructed to set a record - what was the roof used for in 1942?:site25:-121.654694:36.673580:0.000000:
+26:J.H. McDougall:171 Main & 5 West Gabilan:8317841125:This building survived what major disaster in 1906?:site26:-121.655067:36.675667:0.000000:
+27:First National Bank Of Salinas:165 Main Street:8317582337:What was once stored in the cooler of this establishment?:site27:-121.655067:36.675785:0.000000:
+28:Rodeo Cafe:131 Main Street:8314246012:What famous person used to eat here?:site28:-121.655289:36.676620:0.000000:
+29:Mayer's Butcher Shop:129 Main Street:8314225500:How did a woman make this early Salinas business unusual?:site29:-121.654443:36.680038:0.000000:
+30:Pia's Bi-Rite Grocery:127 Main Street:8317700992:This building is named after which local founding family?:site30:-121.654451:36.680018:0.000000:
+31:National Steinbeck Center:1 Main Street:8317754738:What occurred here in 1989 to make the Steinbeck Center possible?:site31:-121.655617:36.676918:0.000000:
+32:The Garden of Memories:13 Abbott Street:8314226417:Which local artist raised eyebrows by photographing a nude woman at Steinbeck's grave?:site32:-121.647656:36.670559:0.000000:
+33:Boronda Adobe:333 Boronda Road:8317578085:Why did Jose Eusebio Boronda sue his own children?:site33:-121.677986:36.700272:0.000000:
+34:Cominos Hotel:269 Main Street:8317573663:What year was this built?:site34:-121.654964:36.673752:0.000000:
+35:White Theater, Crystal Theater, and more:411 Central Avenue:8317556700:Which was the first theater in Salinas?:site35:-121.665382:36.675423:0.000000:
+36:Hartnell College:411 Central Avenue:8317556700:Which Salinas pioneer was this college named after?:site36:-121.665382:36.675423:0.000000:
+37:Central Park:400 Central Avenue:8317711990:Which trees were planted here to create Salinas' first arboritum?:site37:-121.665157:36.675459:0.000000:
+38:Queen Anne Cottage:30 Central Avenue:8317711990:How did Claus Spreckles influence the construction of this house?:site38:-121.656826:36.676534:0.000000:
+39:California Bugalow:36 Central Avenue:8317711990:How did Claus Spreckles influence the construction of this house?:site39:-121.656898:36.676526:0.000000:
+40:The Austin House:40 Central Avenue:8317711990:In what way was Mr. Austin a well known community figure?:site40:-121.656946:36.676521:0.000000:
+41:Poze Eade House:106 Central Avenue:831771990:How did this family contribute to the Salinas community and in what year was it built?:site41:-121.657970:36.676403:0.000000:
+42:Mayer House:134 Central Avenue:8317711990:What Salinas female first did the owner of this house claim?:site42:-121.659156:36.676259:0.000000:
+43:Spenish Revival House:140 Central Avenue:8317711990:What feature was added to this house at a later date?:site43:-121.659854:36.676178:0.000000:
+44:P.P. Krough Residence:146 Central Avenue:8317711990:In what year & how much did this cross-gambled version Queen Anne cottage cost to build?:site44:-121.660016:36.676157:0.000000:
+45:Sargent House:154 Central Avenue:8317711990:Which architectural style does this house represent & who was the architect?:site45:-121.660207:36.676132:0.000000:
+46:The Spanish House:158 Central Avenue:8317711990:What was the original use of this building?:site46:-121.660266:36.676125:0.000000:
+47:Italianate Cottages:149-149 1/2 Central Avenue:8317711990:In what year where these cottages constructed?:site47:-121.660177:36.676135:0.000000:
+48:American Foursquare House:147 Central Avenue:8317711990:What type of glass was used to detail the windows?:site48:-121.660177:36.676135:0.000000:
+49:Colonial Revival House:141 Central Avenue:83177711990:What is the nickname of this house?:site49:-121.659854:36.676178:0.000000:
+50:Design House:109 Central Avenue:83177711990:Who was the builder of this detail oriented residence?:site50:-121.657637:36.676444:0.000000:
+51:Roosevelt School:120 Capitol Street:8317711990:What was the name of this school when the young John Steinbeck attended it?:site51:-121.660602:36.674785:0.000000:
+52:Abbott House:156 Central Avenue:8317711990:What street is named after this found famil of Salinas?:site52:-121.660236:36.676128:0.000000:
+53:Spring School:30 Hitchcock Road:8314551868:How many times did this school move before it found it's present location?:site0: -121.668295:36.646788:0.000000:
+54:The Farm:7 Foster Rd:8314552575:What is the name of the artist who created the giant field workers?:site0:-121.668483:36.637111:0.000000:
+55:Chateau Coralini:100 River Road:8314552100:What two founding families is this bed & breakfast named after?:site0: -121.670953:36.622387:0.000000:
+56:Wild Things:400 River Road:8314551901:What rescued animals bring breakfast to guests of the Safari Inn located on the property?:site0:-121.625107:36.597033:0.000000:
+57:Marilyn Remark:645 River Road:8314559310:How did this winery featuring unsual varietals get it's name?:site0:-121.587882:36.576621:0.000000:
+58:Barlocker's Rustiling Oaks Ranch:313 Limekiln Road:831901898:What can a visitor do at this location?:site0:-121.530797:36.509748:0.000000:
+59:Pessagno Winerey:1645 River Road:8314559463:How did this valley family become winemakers?:site0:-121.540800:36.540250:0.000000:
+60:Manzoni Estates:30981 River:8316753398:What crops did the pioneer family originally grow on their land?:site0:0:0:0:
+61:Ray Franscioni Wines:32720 River Road:8316753548:How did this valley family begin to make wine?:site0:-121.482059:36.47788:0.000000:
+62:Labor Camp:36571 Foothill Road:8310000000:Steinbeck wrote about the life of migrant workers and their living condtions in this novel?:site0:-121.546353:36.66926:0.000000:
+63:Mission Soledad:36641 Fort Romie Road:8316782586:Why is this the most authentic of the California Missions?:site0:0:0:0:
+64:Mesa De Sol:000000 Arroyo Seco Road:8310000000:Why did this family open a tasting room?:site0:0:0:0:
+65:Boekenoogen:Fairview Road:8316753549:What was this pioneer family's original use of the current vineyard land?:site0:0:0:0:
+66:Wrath Wines:35801 Foothill Road:8316782992:What is the story behind the old Victorian house on the hill?:site0:0:0:0:
+67:Hahn Estates Smith & Hook:37700 Foothill Road:831684555:How did this world-class winery come into being?:site0:0:0:0:
+68:Paraiso Vineyards:37500 Foothill Road:8316780330:What natural geological treasure is this winery named after?:site0:0:0:0:
+69:Ventana Vineyards: 38740 Los Coches Road:831682900:What was the original use of the tasting room on River Road Wine Trail?:site0:0:0:0:
+70:Scheid Vineyards:1972 Hobson Avenue:8313860316:How did this winery come into being?:site0:0:0:0:
+71:Sycamore Cellars Winery:45185 Arroyo Seco Road:8316745760:The small side entrance was used for what type of horse-drawn vehicle?:site0:0:0:0:
+72:Rancho Los Coches:Hwy 101 @ Arroyo Seco Road:8310000000:What was this building used for?:site0:0:0:0:
+73:Chalone:32025 Stonewall Canyon Road:8316781717:The small side entrance was used for what type of horse-drawn vehicle?:site0:0:0:0:
+74:Pinnacles National Monument:2400 Hwy 146:8313894485:Where is the other half of this ancient geological formation?:site0:0:0:0:
+75:Inn at the Pinnacles:32025 Stonewall Canyon Road:8316782400:What else does this family-owned business produce?:site0:0:0:0:
+76:Arroyo Seco:00000 Arroyo Seco Road:8310000000:Which natural hot springs and retreat can be hiked to from the this river valley?:site0:0:0:0:
+83:Odd Fellows Hall:215 Main Street:8314492474:One of the last local working meeting halls for what type of organization?:site0:0:0:0:
+97:Caboose:26 Station Place:8317589126:What year were these built,what were they used for, and why are they here????:site0:0:0:0:
+98:Locomotive:26 Station Place:8317589126:What year were these built,what were they used for, and why are they here????:site0:0:0:0:
+99:Reefer:26 Station Place:8317589126:What year were these built,what were they used for, and why are they here????:site0:0:0:0:
