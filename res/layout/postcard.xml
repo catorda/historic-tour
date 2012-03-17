@@ -3,7 +3,7 @@
     android:id="@+id/postcard_layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="fill_parent"
@@ -35,8 +35,8 @@
         android:layout_height="300dp"
         android:layout_gravity="center"
         android:adjustViewBounds="true"
-        android:maxHeight="300dp"
-        android:maxWidth="200dp" />
+        android:maxHeight="600dp"
+        android:maxWidth="400dp" />
 
     <LinearLayout
         android:layout_width="fill_parent"

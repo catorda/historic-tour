@@ -84,6 +84,7 @@ public class PostcardActivity extends Activity implements OnClickListener{
 			Intent picMessageIntent = new Intent(android.content.Intent.ACTION_SEND);   
 			picMessageIntent.setType("image/jpeg");  
 			picMessageIntent.putExtra(Intent.EXTRA_STREAM, pictureUri); 
+			picMessageIntent.putExtra(Intent.EXTRA_TEXT, "Test text message");
 			startActivity(Intent.createChooser(picMessageIntent, "Send your picture using:")); 
 
 		} else if(v.getId() == R.id.takepicture_button) {
@@ -106,7 +107,7 @@ public class PostcardActivity extends Activity implements OnClickListener{
 				File photo = new File(Environment.getExternalStorageDirectory(), "Pic.jpg");     
 				Uri selectedImageUri = Uri.fromFile(photo); 
 				Bitmap b = BitmapFactory.decodeFile(photo.getAbsolutePath());
-				Bitmap smallB= Bitmap.createScaledBitmap(b, 300, 300, false);
+				Bitmap smallB= Bitmap.createScaledBitmap(b, 400, 400, false);
 				FileOutputStream fos;
 				try {
 					fos = new FileOutputStream(photo);
@@ -127,7 +128,7 @@ public class PostcardActivity extends Activity implements OnClickListener{
 				pictureUri = selectedImageUri; 
 				String selectedImagePath = getPath(selectedImageUri);   
 				Bitmap b = BitmapFactory.decodeFile(selectedImagePath);
-				Bitmap smallB= Bitmap.createScaledBitmap(b, 300, 300, false);
+				Bitmap smallB= Bitmap.createScaledBitmap(b, 400, 400, false);
 				FileOutputStream fos;
 				try {
 					fos = new FileOutputStream(photo);
