@@ -41,9 +41,7 @@ public class DestinationActivity extends Activity{
     	address.setText(data.getAddress());
     	number.setText(data.getPhone());
     	desc.setText(data.getDesc());
-    	Drawable draw = null;
-    	draw.createFromPath("/HistoricTour/res/drawable-ldpi/"+ data.getImage() + ".jpg");
-    	image.setImageDrawable(draw);
+    	image.setImageLevel(data.getNumber());
     }
     
     public void callSite(View v){
