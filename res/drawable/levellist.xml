@@ -53,5 +53,6 @@
   		<item android:maxLevel="50" android:drawable="@drawable/site50" />
   		<item android:maxLevel="50" android:drawable="@drawable/site50b" />
   		<item android:maxLevel="51" android:drawable="@drawable/site51" />
+  		<item android:maxLevel="100" android:drawable="@drawable/none" />
 </level-list>
 
