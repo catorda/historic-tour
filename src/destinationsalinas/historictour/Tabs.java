@@ -13,6 +13,10 @@ public class Tabs extends TabActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tabs);
         
+        if (GlobalVariables.destinationManager == null)
+        {
+            GlobalVariables.destinationManager = new DestinationManager(getResources());
+        }
         Resources res = getResources();
         TabHost tabHost = getTabHost();
         TabHost.TabSpec spec;
@@ -23,7 +27,7 @@ public class Tabs extends TabActivity {
         tabHost.addTab(spec);
 
         // Add intent for DestinationsActivity
-        intent = new Intent(this, DestinationListActivity.class);
+        intent = new Intent(this, DestinationActivity.class);
         spec = tabHost.newTabSpec("destinations").setIndicator("Destinations", res.getDrawable(R.drawable.icon)).setContent(intent);
         tabHost.addTab(spec);
         
