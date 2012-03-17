@@ -40,8 +40,9 @@ public class MapsActivity extends MapActivity {
 		GeoPoint point;
 		OverlayItem overlayitem;
 		
-		for (int i = 0; i < destinationManager.getDataListSize(); i++)
+		for (int i = 0; i < destinationManager.getSize(); i++)
 		{
+			Log.i("MapsActivity", "" + destinationManager.getDestination(i).getLocation().getLatitudeE6());
 			if (destinationManager.getDestination(i).getLocation().getLatitudeE6() != 0)
 			{
 				switch(counter)

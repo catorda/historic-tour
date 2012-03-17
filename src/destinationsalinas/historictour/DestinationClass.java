@@ -1,5 +1,7 @@
 package destinationsalinas.historictour;
 
+import com.google.android.maps.GeoPoint;
+
 public class DestinationClass {
 	private int number;
 	private String name;
@@ -7,8 +9,7 @@ public class DestinationClass {
 	private String phone;
 	private String desc;
 	private String image;
-	private Double latitude;
-	private Double longitude;
+	private GeoPoint location;
 	private Double other;
 	
 	public DestinationClass(String [] data){
@@ -17,9 +18,8 @@ public class DestinationClass {
 		address = data[2];
 		phone = data[3];
 		desc = data[4];
-		image = data[5];	
-		longitude = Double.parseDouble(data[6]);
-		latitude = Double.parseDouble(data[7]);
+		image = data[5];
+		location = new GeoPoint((int)(Double.parseDouble(data[7])*1000000), (int)(Double.parseDouble(data[6])*1000000));
 		other = Double.parseDouble(data[8]);
 	}
 	
@@ -47,12 +47,9 @@ public class DestinationClass {
 		return image;
 	}
 	
-	public Double getLatitude(){
-		return latitude;
-	}
-	
-	public Double getLongitdude(){
-		return longitude;
+	public GeoPoint getLocation()
+	{
+		return location;
 	}
 	
 	public Double getOther(){
