@@ -22,59 +22,61 @@ public class MapsActivity extends MapActivity {
 	private List<Overlay> mapOverlays;
 	private Drawable drawable;
 	private MapsItemizedOverlay itemizedOverlay;
-	private int x = 100;
-	private int y = 100;
+	private DestinationManager destinationManager;
+	private final int DEFAULT_ZOOM = 12;
+	
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.maps);
 		
+		destinationManager = GlobalVariables.destinationManager;
 		MapView mapView;
 		mapView = (MapView) findViewById(R.id.mapview);
 		mapView.setBuiltInZoomControls(true);
 		
 		mapOverlays = mapView.getOverlays();
 		int counter = 0;
+		GeoPoint point;
+		OverlayItem overlayitem;
 		
-		// Replace the number 6 with Constants.destinationList.size()
-		for (int i = 0; i < 6; i++)
+		for (int i = 0; i < destinationManager.getDataListSize(); i++)
 		{
-			switch(counter)
+			if (destinationManager.getDestination(i).getLocation().getLatitudeE6() != 0)
 			{
-			case 0:
-				drawable = this.getResources().getDrawable(R.drawable.green_marker);
-				break;
-			case 1:
-				drawable = this.getResources().getDrawable(R.drawable.light_blue_marker);
-				break;
-			case 2:
-				drawable = this.getResources().getDrawable(R.drawable.pink_marker);
-				break;
-			case 3:
-				drawable = this.getResources().getDrawable(R.drawable.purple_marker);
-				break;
-			case 4:
-				drawable = this.getResources().getDrawable(R.drawable.red_marker);
-				break;
-			case 5:
-				drawable = this.getResources().getDrawable(R.drawable.yellow_marker);
-				counter = -1;
-				break;
+				switch(counter)
+				{
+				case 0:
+					drawable = this.getResources().getDrawable(R.drawable.green_marker);
+					break;
+				case 1:
+					drawable = this.getResources().getDrawable(R.drawable.light_blue_marker);
+					break;
+				case 2:
+					drawable = this.getResources().getDrawable(R.drawable.pink_marker);
+					break;
+				case 3:
+					drawable = this.getResources().getDrawable(R.drawable.purple_marker);
+					break;
+				case 4:
+					drawable = this.getResources().getDrawable(R.drawable.red_marker);
+					break;
+				case 5:
+					drawable = this.getResources().getDrawable(R.drawable.yellow_marker);
+					counter = -1;
+					break;
+				}
+				
+				itemizedOverlay = new MapsItemizedOverlay(drawable);
+				point = destinationManager.getDestination(i).getLocation();
+				overlayitem = new OverlayItem(point, "" + destinationManager.getDestination(i).getNumber(), "");
+				itemizedOverlay.addOverlay(overlayitem);
+				mapOverlays.add(itemizedOverlay);
+				counter++;
 			}
-			
-			itemizedOverlay = new MapsItemizedOverlay(drawable);
-			
-			// Assign point to the GeoPoint object from a Destination object
-			GeoPoint point = new GeoPoint(x, y);
-			OverlayItem overlayitem = new OverlayItem(point, "Location", "This is a location.");
-			itemizedOverlay.addOverlay(overlayitem);
-			mapOverlays.add(itemizedOverlay);
-			counter++;
-			x += 1000;
-			y += 1000;
 		}
 		
-		mapView.getController().setZoom(10);
+		mapView.getController().setZoom(DEFAULT_ZOOM);
 		mapView.getController().setCenter(itemizedOverlay.getCenter());
 	}
 	
@@ -110,12 +112,12 @@ public class MapsActivity extends MapActivity {
 			populate();
 		}
 		
-		// Use onTap to open the DestinationActivity of the overlay the user taps on
 		@Override 
 	    protected boolean onTap(int i) { 
 			
 			Intent intent = new Intent();
-			intent.setClass(getBaseContext(), GeneralInfoActivity.class);
+			intent.setClass(getBaseContext(), DestinationActivity.class);
+			intent.putExtra("site.number", Integer.parseInt(mOverlays.get(i).getTitle()));
 			startActivity(intent);
             return true; 
 	    }
