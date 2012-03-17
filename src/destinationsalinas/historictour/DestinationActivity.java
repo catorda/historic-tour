@@ -12,6 +12,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -23,19 +24,26 @@ public class DestinationActivity extends Activity{
 	TextView number;
 	TextView desc;
 	ImageView image;
+	private int siteNumber;
+	private DestinationManager destinationManager;
 	
 	
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.destination);
+        
         title = (TextView) findViewById(R.id.title);
     	address = (TextView) findViewById(R.id.address);
     	number = (TextView) findViewById(R.id.number);
     	desc = (TextView) findViewById(R.id.desc);
     	image = (ImageView) findViewById(R.id.image);
     	
-    	Bundle extras = this.getIntent().getExtras();
-    	
+        Bundle extras = getIntent().getExtras();
+        siteNumber = extras.getInt("site.number");
+        destinationManager = GlobalVariables.destinationManager;
+        
+        DestinationClass destination = destinationManager.getDestinationBySiteNumber(siteNumber);
+        setDestination(destination);
     }
 
 
