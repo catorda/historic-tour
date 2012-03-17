@@ -31,8 +31,7 @@ public class DestinationListActivity extends Activity {
 		setContentView(R.layout.browsedestination);
 
 		destinationList=new ArrayList<DestinationClass>();
-		DestinationManager dm = new DestinationManager(this.getResources());
-		destinationList=dm.getDestinationList();
+		destinationList=GlobalVariables.destinationManager.getDestinationList();
 		for(int i=0;i<destinationList.size();i++){
 			System.out.println("**"+destinationList.get(i).getAddress());
 		}
