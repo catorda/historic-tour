@@ -1,6 +1,6 @@
 01:Steinbeck House:132 Central Avenue:8314222735:Description for testing purposes:site1:-121.659355:36.676643:0.000000:
-02:Amtrak Station:11 Station Place:8008727245:Description for testing purposes:site2: -121.657257:36.679398:0.000000:
-03:Railway Express Agency:26 Station Place:8317546787:Description for testing purposes:site3:-121.657044,36.678014,0.000000:
+02:Amtrak Station:11 Station Place:8008727245:Description for testing purposes:site2:-121.657257:36.679398:0.000000:
+03:Railway Express Agency:26 Station Place:8317546787:Description for testing purposes:site3:-121.657044:36.678014:0.000000:
 04:Harvey House:132 Station Place:4153816737:Description for testing purposes:site4:-121.656097:36.678902:0.000000:
 05:The Californian:123 West Alisal Street:8314242221:Description for testing purposes:site5:-121.658501:36.672981:0.000000:
 06:Monterey County Courthouse:240 Church Street: :Description for testing purposes:site6:-121.658501:36.673565:0.000000:
@@ -9,7 +9,7 @@
 09:Center for Community Advocacy:22 West Gabilan:8317532324:Description for testing purposes:site9:-121.656197:36.675491:0.000000:
 10:Old Post Office:12 West Gabilan:8314246468:Description for testing purposes:site10:-121.656037:36.675353:0.000000:
 11:Salinas City Bank:4 West Gabilan Street:8317711990:Description for testing purposes:site11:-121.655493:36.675407:0.000000:
-12:Monterey County Bank:200 Main Street:8317570175:Description for testing purposes:site12:-121.654961,36.675373,0.000000:
+12:Monterey County Bank:200 Main Street:8317570175:Description for testing purposes:site12:-121.654961:36.675373:0.000000:
 13:Bank of Italy:202 Main Street:8314492474:Description for testing purposes:site13:-121.655373:36.675346:0.000000:
 14:Old Livery Stables:17 East Gabilan Street:83177729597:Description for testing purposes:site14:-121.654369:36.675534:0.000000:
 15:Porter & Irvine's:210 Main Street:8314221760:Description for testing purposes:site15:-121.655342:36.675060:0.000000:
@@ -59,20 +59,20 @@
 59:Pessagno Winerey:1645 River Road:8314559463:Description for testing purposes:site0:-121.540800:36.540250:0.000000:
 61:Ray Franscioni Wines:32720 River Road:8316753548:Description for testing purposes:site0:-121.482059:36.47788:0.000000:
 62:Labor Camp:36571 Foothill Road:8310000000:Description for testing purposes:site0:-121.546353:36.66926:0.000000:
-63:Mission Soledad:36641 Fort Romie Road:8316782586:Description for testing purposes:site0: : :
-64:Mesa De Sol:000000 Arroyo Seco Road:8310000000:Description for testing purposes:site0: : :
-65:Boekenoogen:Fairview Road:8316753549:Description for testing purposes:site0: : :
-66:Wrath Wines:35801 Foothill Road:8316782992:Description for testing purposes:site0: : :
-67:Hahn Estates Smith & Hook:37700 Foothill Road:831684555:Description for testing purposes:site0: : :
-68:Paraiso Vineyards:37500 Foothill Road:8316780330:Description for testing purposes:site0: : :
-69:Ventana Vineyards: 38740 Los Coches Road:831682900:Description for testing purposes:site0: : :
-70:Scheid Vineyards:1972 Hobson Avenue:8313860316:Description for testing purposes:site0: : :
-71:Sycamore Cellars Winery:45185 Arroyo Seco Road:8316745760:Description for testing purposes:site0: : :
-73:Chalone:32025 Stonewall Canyon Road:8316781717:Description for testing purposes:site0: : :
-74:Pinnacles National Monument:2400 Hwy 146:8313894485:Description for testing purposes:site0: : :
-75:Inn at the Pinnacles:32025 Stonewall Canyon Road:8316782400:Description for testing purposes:site0: : :
-76:Arroyo Seco:00000 Arroyo Seco Road:8310000000:Description for testing purposes:site0: : :
-83:Odd Fellows Hall:215 Main Street:8314492474:Description for testing purposes:site0: : :
-97:Caboose:26 Station Place:8317589126:Description for testing purposes:site0: : :
-98:Locomotive:26 Station Place:8317589126:Description for testing purposes:site0: : :
-99:Reefer:26 Station Place:8317589126:Description for testing purposes:site0: : :
+63:Mission Soledad:36641 Fort Romie Road:8316782586:Description for testing purposes:site0:0:0:0:
+64:Mesa De Sol:000000 Arroyo Seco Road:8310000000:Description for testing purposes:site0:0:0:0:
+65:Boekenoogen:Fairview Road:8316753549:Description for testing purposes:site0:0:0:0:
+66:Wrath Wines:35801 Foothill Road:8316782992:Description for testing purposes:site0:0:0:0:
+67:Hahn Estates Smith & Hook:37700 Foothill Road:831684555:Description for testing purposes:site0:0:0:0:
+68:Paraiso Vineyards:37500 Foothill Road:8316780330:Description for testing purposes:site0:0:0:0:
+69:Ventana Vineyards: 38740 Los Coches Road:831682900:Description for testing purposes:site0:0:0:0:
+70:Scheid Vineyards:1972 Hobson Avenue:8313860316:Description for testing purposes:site0:0:0:0:
+71:Sycamore Cellars Winery:45185 Arroyo Seco Road:8316745760:Description for testing purposes:site0:0:0:0:
+73:Chalone:32025 Stonewall Canyon Road:8316781717:Description for testing purposes:site0:0:0:0:
+74:Pinnacles National Monument:2400 Hwy 146:8313894485:Description for testing purposes:site0:0:0:0:
+75:Inn at the Pinnacles:32025 Stonewall Canyon Road:8316782400:Description for testing purposes:site0:0:0:0:
+76:Arroyo Seco:00000 Arroyo Seco Road:8310000000:Description for testing purposes:site0:0:0:0:
+83:Odd Fellows Hall:215 Main Street:8314492474:Description for testing purposes:site0:0:0:0:
+97:Caboose:26 Station Place:8317589126:Description for testing purposes:site0:0:0:0:
+98:Locomotive:26 Station Place:8317589126:Description for testing purposes:site0:0:0:0:
+99:Reefer:26 Station Place:8317589126:Description for testing purposes:site0:0:0:0:
