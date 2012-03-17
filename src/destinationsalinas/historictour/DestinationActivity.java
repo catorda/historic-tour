@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,7 @@ public class DestinationActivity extends Activity{
 	TextView address;
 	TextView number;
 	TextView desc;
+	ImageView image;
 	
 	
     public void onCreate(Bundle savedInstanceState) {
@@ -30,14 +32,18 @@ public class DestinationActivity extends Activity{
     	address = (TextView) findViewById(R.id.address);
     	number = (TextView) findViewById(R.id.number);
     	desc = (TextView) findViewById(R.id.desc);
+    	image = (ImageView) findViewById(R.id.image);
     }
 
 
-    public void setDestination(String[] data){
-    	title.setText(data[1]);
-    	address.setText(data[2]);
-    	number.setText(data[3]);
-    	desc.setText(data[4]);
+    public void setDestination(DestinationClass data){
+    	title.setText(data.getName());
+    	address.setText(data.getAddress());
+    	number.setText(data.getPhone());
+    	desc.setText(data.getDesc());
+    	Drawable draw = null;
+    	draw.createFromPath("/HistoricTour/res/drawable-ldpi/"+ data.getImage() + ".jpg");
+    	image.setImageDrawable(draw);
     }
     
     public void callSite(View v){
@@ -45,7 +51,6 @@ public class DestinationActivity extends Activity{
             startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + number.getText())));
           } catch (Exception e) {
             e.printStackTrace();
-            desc.setText("Damn it!");
           }
     }
     
@@ -54,7 +59,6 @@ public class DestinationActivity extends Activity{
             startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "8314019587")));
           } catch (Exception e) {
             e.printStackTrace();
-            desc.setText("Damn it!");
           }
     	}
 }

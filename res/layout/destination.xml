@@ -16,8 +16,8 @@
     
     <TableRow>
     <ImageView
-   		android:id="@+id/test_image"
-   		android:src="@drawable/icon"
+   		android:id="@+id/image"
+   		android:src="@drawable/site1"
    		android:layout_width="wrap_content"
    		android:layout_height="wrap_content"
    		android:layout_gravity="left" />

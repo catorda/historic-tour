@@ -13,7 +13,7 @@ import destinationsalinas.historictour.R;
 public class DestinationManager {
 	
 	private String [] data = new String[5];
-	private ArrayList<String[]> dataList = new ArrayList<String[]>();
+	private ArrayList<DestinationClass> dataList = new ArrayList<DestinationClass>();
 
 	public DestinationManager(Resources res){
     	InputStream in;
@@ -31,12 +31,13 @@ public class DestinationManager {
 				line = oS.toString();
 					st = new StringTokenizer(line, ":");
 					while(st.hasMoreTokens()){
-
-						for(int i = 0; i < 5; i++){
+						for(int i = 0; i < 6; i++){
 						data[i] = st.nextToken();
 						}
-						dataList.add(data);
+						dataList.add(new DestinationClass(data));
 					}
+			in.close();
+			oS.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -46,7 +47,7 @@ public class DestinationManager {
 		}
 	}
 	
-	public String[] getDestination(int i){
+	public DestinationClass getDestination(int i){
 		return dataList.get(i);
 	}
 }
