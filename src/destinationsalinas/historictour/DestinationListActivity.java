@@ -6,6 +6,7 @@ import java.util.List;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -56,7 +57,8 @@ public class DestinationListActivity extends Activity {
 	
 	protected void startDestinationActivity(int destNum, View v) {
 		Intent i = new Intent(); 
-		i.putExtra("destination-number", destNum);
+		Log.i("DestinationListActivity", "" + destNum);
+		i.putExtra("site.number", destNum);
 		i.setClass(v.getContext(), DestinationActivity.class);
 		this.startActivity(i);
 	}
