@@ -13,7 +13,7 @@ import destinationsalinas.historictour.R;
 public class DestinationManager {
 	
 	private String [] data = new String[9];
-	private ArrayList<DestinationClass> dataList = new ArrayList<DestinationClass>();
+	private static ArrayList<DestinationClass> dataList = new ArrayList<DestinationClass>();
 
 	public DestinationManager(Resources res){
     	InputStream in;
@@ -56,5 +56,8 @@ public class DestinationManager {
 		return null;
 	}
 	
+	public static ArrayList<DestinationClass> getDestinationList() { 
+		return dataList;
+	}
 
 }
