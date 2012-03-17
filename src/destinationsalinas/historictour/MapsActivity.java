@@ -23,7 +23,7 @@ public class MapsActivity extends MapActivity {
 	private Drawable drawable;
 	private MapsItemizedOverlay itemizedOverlay;
 	private DestinationManager destinationManager;
-	private final int DEFAULT_ZOOM = 12;
+	private final int DEFAULT_ZOOM = 11;
 	
 	public void onCreate(Bundle savedInstanceState)
 	{

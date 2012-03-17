@@ -23,7 +23,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
-                 />
+                android:textColor="#000000" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -32,7 +32,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/textView1"
-                />
+                android:textColor="#000000"/>
 
             <TextView
                 android:id="@+id/textView3"
@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/textView2"
-                 />
+                android:textColor="#000000" />
 
         </RelativeLayout>
 
