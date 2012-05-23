@@ -10,12 +10,10 @@ import com.google.android.maps.MapView;
 import com.google.android.maps.Overlay;
 import com.google.android.maps.OverlayItem;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 public class MapsActivity extends MapActivity {
 
@@ -23,7 +21,9 @@ public class MapsActivity extends MapActivity {
 	private Drawable drawable;
 	private MapsItemizedOverlay itemizedOverlay;
 	private DestinationManager destinationManager;
+	private MapView mapView;
 	private final int DEFAULT_ZOOM = 11;
+	private final int DESTINATION_ZOOM = 20;
 	
 	public void onCreate(Bundle savedInstanceState)
 	{
@@ -31,7 +31,7 @@ public class MapsActivity extends MapActivity {
 		setContentView(R.layout.maps);
 		
 		destinationManager = GlobalVariables.destinationManager;
-		MapView mapView;
+		
 		mapView = (MapView) findViewById(R.id.mapview);
 		mapView.setBuiltInZoomControls(true);
 		
@@ -76,15 +76,21 @@ public class MapsActivity extends MapActivity {
 			}
 		}
 		
-		mapView.getController().setZoom(DEFAULT_ZOOM);
-		mapView.getController().setCenter(itemizedOverlay.getCenter());
+		Bundle extras = getIntent().getExtras();
+		
+		if (extras == null)
+		{
+			mapView.getController().setZoom(DEFAULT_ZOOM);
+			mapView.getController().setCenter(itemizedOverlay.getCenter());
+		}
+		else
+		{
+			mapView.getController().setZoom(DESTINATION_ZOOM);
+			mapView.getController().setCenter(new GeoPoint(extras.getInt("site.latitude"), extras.getInt("site.longitude")));
+			Log.d("Location", "" + extras.getInt("site.latitude") + ", " + extras.getInt("site.longitude"));
+		}
 	}
-	
-	@Override
-	protected boolean isRouteDisplayed() {
-	    return false;
-	}
-	
+
 	private class MapsItemizedOverlay extends ItemizedOverlay {
 
 		private ArrayList<OverlayItem> mOverlays = new ArrayList<OverlayItem>();
@@ -121,5 +127,11 @@ public class MapsActivity extends MapActivity {
 			startActivity(intent);
             return true; 
 	    }
+	}
+
+	@Override
+	protected boolean isRouteDisplayed() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

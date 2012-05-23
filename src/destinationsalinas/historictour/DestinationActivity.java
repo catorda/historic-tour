@@ -71,5 +71,17 @@ public class DestinationActivity extends Activity{
             e.printStackTrace();
           }
     	}
+    
+    public void viewMap(View v){
+    	try {
+    		Intent i = new Intent(this, MapsActivity.class);
+    		DestinationClass destination = destinationManager.getDestinationBySiteNumber(siteNumber);
+    		i.putExtra("site.latitude", destination.getLocation().getLatitudeE6());
+    		i.putExtra("site.longitude", destination.getLocation().getLongitudeE6());
+    		startActivity(i);
+    	} catch (Exception e) {
+    		e.printStackTrace();
+    	}
+    }
 }
 

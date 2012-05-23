@@ -65,12 +65,19 @@
         android:onClick="callSite" />
     
     <Button 
+        android:id="@+id/call_tour_btn"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/call_btn"
         android:text="@string/call_tour"
         android:onClick="callTour" />
 
-    
+    <Button 
+        android:id="@+id/view_map_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/call_tour_btn"
+        android:text="@string/view_map"
+        android:onClick="viewMap" />
 
 </RelativeLayout>
