@@ -43,4 +43,6 @@ public class Tabs extends TabActivity {
         tabHost.setCurrentTab(0);
 
     }
+    
+
 }

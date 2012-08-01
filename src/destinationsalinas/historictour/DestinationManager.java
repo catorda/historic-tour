@@ -15,6 +15,8 @@ import destinationsalinas.historictour.R;
 public class DestinationManager {
 	
 	private static ArrayList<DestinationClass> dataList = new ArrayList<DestinationClass>();
+	private static ArrayList<DestinationClass> historicList = new ArrayList<DestinationClass>();
+	private static ArrayList<DestinationClass> hotelList = new ArrayList<DestinationClass>();
 	String str;
 
 	public DestinationManager(Resources res){
@@ -30,7 +32,7 @@ public class DestinationManager {
 			while (str != null) {
 				System.out.println("str" + str);
 				String[] strArray = str.split(":");
-				dataList.add(new DestinationClass(strArray));
+				historicList.add(new DestinationClass(strArray));
 				str = f.readLine();
 					}
 			in.close();
@@ -41,6 +43,30 @@ public class DestinationManager {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+    	
+    	rID = R.raw.restaurants; 
+    	in = res.openRawResource(rID);
+    	try {
+			BufferedReader f = new BufferedReader(new InputStreamReader(
+					in));
+
+			str = f.readLine();
+			while (str != null) {
+				System.out.println("str" + str);
+				String[] strArray = str.split("::");
+				hotelList.add(new DestinationClass(strArray));
+				str = f.readLine();
+					}
+			in.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    	dataList = historicList;
 	}
 	
 	public DestinationClass getDestinationBySiteNumber(int i){
@@ -63,5 +89,12 @@ public class DestinationManager {
 	public ArrayList<DestinationClass> getDestinationList() { 
 		return dataList;
 	}
+	
+	public void switchToHotel(){
+		dataList = hotelList;
+	}
 
+	public void switchToHistoric(){
+		dataList = historicList;
+	}
 }
