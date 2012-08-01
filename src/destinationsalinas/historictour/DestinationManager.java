@@ -25,11 +25,13 @@ public class DestinationManager {
     	try {
 			BufferedReader f = new BufferedReader(new InputStreamReader(
 					in));
-			while (f.readLine() != null) {
-				str = f.readLine();
+
+			str = f.readLine();
+			while (str != null) {
 				System.out.println("str" + str);
 				String[] strArray = str.split(":");
-						dataList.add(new DestinationClass(strArray));
+				dataList.add(new DestinationClass(strArray));
+				str = f.readLine();
 					}
 			in.close();
 		} catch (FileNotFoundException e) {
