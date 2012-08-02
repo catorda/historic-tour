@@ -3,8 +3,6 @@ package destinationsalinas.historictour;
 import java.util.ArrayList;
 import java.util.List;
 
-import destinationsalinas.historictour.R.menu;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +12,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
@@ -99,7 +96,7 @@ public class DestinationListActivity extends Activity {
 	        		browseDestinationList.setOnItemClickListener(itemListener);
 	            	break;
 	            case R.id.about:	
-	            	Toast.makeText(this, "You pressed the icon and text!", Toast.LENGTH_LONG).show();
+	            	Toast.makeText(this, "Destination Salinas Self-Guided Tour App\n\tVersion 1.0\n\tCreated by:\n\t\tLyndon Curry\n\t\tCatrina Torda\n\t\tAlexander Kaufmann\n\t\tShalini Av", Toast.LENGTH_LONG).show();
 	                break;
 	        }
 	        return true;

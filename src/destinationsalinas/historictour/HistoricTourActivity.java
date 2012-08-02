@@ -1,13 +1,11 @@
 package destinationsalinas.historictour;
 
-import java.util.HashMap;
-
 import android.app.Activity;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 public class HistoricTourActivity extends Activity {
     /** Called when the activity is first created. */
@@ -16,4 +14,5 @@ public class HistoricTourActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);    	
     }
+    
 }

@@ -2,8 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <item android:id="@+id/change"
 android:title="Switch to Eats and Sleeps"
-android:icon="@drawable/icon" />
+android:icon="@drawable/ic_menu_refresh" />
 <item android:id="@+id/about"
 android:title="About"
-android:icon="@drawable/icon" />
+android:icon="@drawable/ic_menu_info_details" />
 </menu>

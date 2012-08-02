@@ -16,12 +16,16 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class PostcardActivity extends Activity implements OnClickListener{
 
@@ -154,6 +158,23 @@ public class PostcardActivity extends Activity implements OnClickListener{
 		cursor.moveToFirst();         
 		return cursor.getString(column_index);     
 	} 
+	
+	 @Override
+	    public boolean onCreateOptionsMenu(Menu menu) {
+	        MenuInflater inflater = getMenuInflater();
+	        inflater.inflate(R.menu.about, menu);
+	        return true;
+	    }
+	    
+	    @Override
+	    public boolean onOptionsItemSelected(MenuItem item) {
+	        switch (item.getItemId()) {
+	            case R.id.about:	
+	            	Toast.makeText(this, "Destination Salinas Self-Guided Tour App\n\tVersion 1.0\n\tCreated by:\n\t\tLyndon Curry\n\t\tCatrina Torda\n\t\tAlexander Kaufmann\n\t\tShalini Av", Toast.LENGTH_LONG).show();
+	                break;
+	        }
+	        return true;
+	    }
 	
 }
 
