@@ -51,8 +51,13 @@
   		<item android:maxLevel="48" android:drawable="@drawable/site48" />
   		<item android:maxLevel="49" android:drawable="@drawable/site49" />
   		<item android:maxLevel="50" android:drawable="@drawable/site50" />
-  		<item android:maxLevel="50" android:drawable="@drawable/site50b" />
+  		<item android:maxLevel="50" android:drawable="@drawable/site50" />
   		<item android:maxLevel="51" android:drawable="@drawable/site51" />
-  		<item android:maxLevel="100" android:drawable="@drawable/none" />
+  		<item android:maxLevel="52" android:drawable="@drawable/site52" />
+  		<item android:maxLevel="82" android:drawable="@drawable/iphoneicon_big" />
+  		<item android:maxLevel="83" android:drawable="@drawable/site83" />
+  		<item android:maxLevel="100" android:drawable="@drawable/iphoneicon_big" />
+  		<item android:maxLevel="138" android:drawable="@drawable/food" />
+  		<item android:maxLevel="155" android:drawable="@drawable/hotel" />
 </level-list>
 

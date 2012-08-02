@@ -1,0 +1,45 @@
+111::The Bakery Station::202 Monterey Street::8317831140::Open MTWThF 6 AM - 4 PM Sa 7AM - 4PM::site0::-121.6541199::36.6757225::0::
+112::Cherry Bean Coffeehouse and Roastery::332 Main Street::8314241981::Open MTWThFSS 6:30 AM - 10:00 PM::site0::-121.6546869::36.6728847::0::
+113::Rollick's Specialty & Internet Cafe::210 Main Street::8317750175::Open MTWThFSS 6:30 AM - 9:00 PM::site0::-121.6553445::36.6752901::0::
+114::Casa Sorrento Pizza::393 Salinas Street::8317572720::Open MTWThFS 11:00 AM - 9:00 PM::site0::-121.6555954::36.6720105::0::
+115::Chapala Mexican Restaurant::438 Salinas Street::8317574959::Open MTWThFSS 6:30 AM - 10:00 PM::site0::-121.6558949::36.6709346::0::
+116::Dudley's Oldtown::258 Main Street::8317585257::Open MTWThFS 6:30 AM - 3:00 PM::site0::-121.655306::36.6741699::0::
+117::Eagle Restaurant::26 West Gabilan Street::8317512312::Open MTWThFSS 11:00 AM - 9:00 PM::site0::-121.6568652::36.6754187::0::
+118::Elli's Great American Restaurant::1250 South Main Street::8317598455::Lunch Dinner::site0::-121.660538::36.6567::0::
+119::First Awakenings::171 Main Street::8317841125::Open MTWThFSS 7:00 AM - 3:00 PM::site0::-121.6551883::36.675812::0::
+120::The Golden Fish::221 Main Street::831.422.4946::Open MTWThFS 11:00 AM - 9:00 PM::site0::-121.654772::36.675099::0::
+121::Patria::228 Main Street::8317573663::Open MTWThFS 11:00 AM - 9:00 PM::site0::-121.6552916::36.6750086::0::
+122::Kokoro::36 West Gabilan Street::8314247553::Open MTWThFSS 11:00 AM - 9:00 PM::site0::-121.6568302::36.6754867::0::
+123::La Fogata::232 Main Street::8317575690::Open TWThFSS 9:00 AM- 9:00 PM::site0::-121.6552827::36.6747785::0::
+124::Las Comadres::129 Main Street::8317576333::Open TWThFSS 9:00 AM - 9:00 PM::site0::-121.65513::36.676785::0::
+125::Mi Tierra::18 East Gabilan Street::8310000000::Open TWThFS 10:30 AM - 3:00 PM::site0::-121.6543797::36.6755917::0::
+126::Norma's::32 John Street::8314240004::Open MTWThFSS 7:00 AM - 7:00 PM::site0::-121.6536173::36.6705744::0::
+127::Oldtown Deli Cafe::343 Main Street::8314224133::Open MTWThF 11:00 AM - 3:00 PM::site0::-121.654239::36.672585::0::
+128::Olivia's::14 Station Place::8314225430::Open MTWTFSS 7AM - 8PM::site0::-121.656939::36.6782045::0::
+129::Pajaro Street Grill::435 Pajaro Street::8317543738::Open TWTFS 5PM - 9PM::site0::-121.651682::36.671057::0::
+130::The Penny Farthing::9 East San Luis::8314245652::Open MTWThFSS 11:00 AM - 9:00 PM::site0::-121.6541664::36.6721252::0::
+131::The Grower's Pub::227 Monterey Street::8314242231::Open MTWThFS 11:00 AM - 9:00 PM::site0::-121.6537759::36.674719::0::
+132::Salinas Valley Fish House::172 Main Street::9317756012::Open MTWTHF 11:00 AM - 2:30 PM - MTWThFSS 5:00 PM - 10:00 PM::site0::-121.655649::36.675751::0::
+133::Sang's Cafe::131 Main Street::8314246012::Open WThFSS 6:00 AM - 3:00 PM::site0::-121.655115::36.676705::0::
+134::Sho Gun::216 Main Street::8317576105::Open TWThFS 11:00 AM - 9:00 PM::site0::-121.6553241::36.6751592::0::
+135::Smalley's Round-Up::700 West Market Street::8317580511::Open TWThFSS 11:00 AM - 8:00 PM::site0::-121.6711618::36.6833735::0::
+136::The Steinback House::132 Central Avenue::8314242735::Open TWThFS 10:00 AM - 2:00 PM::site0::-121.6592177::36.6765205::0::
+137::Fluff Cupcakery::16 West Gabilan Street::8319755598::Open MTWThFS 8:00 AM - 2:00 PM::site0::-121.6562436::36.6755071::0::
+138::Yangste's Taste of Thai::328 Main Street::8317542223::Open TWThFSS 11:00 AM - 9:00 PM::site0::-121.6548928::36.6731095::0::
+139::East of Eden B&B::5 East Gabilan Street::8315941799::Bed & Breakfast::site0::-121.6549764::36.6756866::0::
+140::Chateau Coralini Retreat & Spa::100 River Road::8314552100::Bed & Breakfast::site0::-121.60445::36.6211744::0::
+141::Inn at the Pinnacles::32025 Stonewall Canyon Road::8316782400::Bed & Breakfast::site0::-121.2369828::36.4562827::0::
+142::Wild Things & Vision Quest Ranch::400 River Road::8314551901::Bed & Breakfast::site0::-121.624716::36.593832::0::
+143::America's Best Value Inn::1030 Fairview Avenue::8314226486::Hotel/Motel::site0::-121.626375::36.66624::0::
+144::Best Western::175 Kern Street::8317840176::Hotel/Motel::site0::-121.641356::36.680557::0::
+145::Comfort Inn & Suites::181 Kern Street::8317701400::Hotel/Motel::site0::-121.641466::36.680933::0::
+146::Country Inn::126 John Street::8317578383::Hotel/Motel::site0::-121.6510518::36.6701189::0::
+147::Courtyard by Marriott::17225 El Ranch Way::8317750491::Hotel/Motel::site0::-111.9995269::33.3282785::0::
+148::Economy Inn::214 John Street::8314246468::Hotel/Motel::site0::-121.6499358::36.6698561::0::
+149::Good Nite Inn::545 Work Street::8317579667::Hotel/Motel::site0::-121.6409177::36.6696704::0::
+150::Holiday Inn & Suites::195 Kern Street::8317371160::Hotel/Motel::site0::-121.6408902::36.6818259::0::
+151::Howard Johnsons::131 John Street::8317571020::Hotel/Motel::site0::-121.650699::36.6705169::0::
+152::Laurel Inn & Conference Center::801 West Laurel Drive::8314492474::Hotel/Motel::site0::-121.66172::36.697355::0::
+153::Quality Inn::144 Kern Street::8314492474::Hotel/Motel::site0::-121.639905::36.679297::0::
+154::Ramada Limited::109 John Street::8314244801::Hotel/Motel::site0::-121.6520525::36.6704752::0::
+155::Traveler's Hotel::16 1/2 East Gabilan Street::8317581198::Hotel/Motel::site0::-121.652973::36.6759569::0::
